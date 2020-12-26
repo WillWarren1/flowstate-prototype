@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"32f98933-90ae-4414-932b-f09c4e6814c0","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"32f98933-90ae-4414-932b-f09c4e6814c0","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"LayerId":{"name":"1497872c-8335-494c-838a-45f420b7c143","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"32f98933-90ae-4414-932b-f09c4e6814c0","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"LayerId":{"name":"1497872c-8335-494c-838a-45f420b7c143","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprPlayer_Dash_Base","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"resourceVersion":"1.0","name":"32f98933-90ae-4414-932b-f09c4e6814c0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -44,7 +45,7 @@
             {"id":"ab58ec08-d43a-48e2-8a43-916bd20c2031","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32f98933-90ae-4414-932b-f09c4e6814c0","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

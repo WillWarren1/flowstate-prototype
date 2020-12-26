@@ -1,8 +1,10 @@
+/// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+/// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 function god_create() {
 	enum_init(); //initialize all of the state, and weapon info
 
 	//screen shake
-	shake = false; //shake true or false
+	shake = true; //shake true or false
 	shakeDur = 5; //how long the shake lasts
 	shakeForce = 1;
 

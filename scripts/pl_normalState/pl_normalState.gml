@@ -1,3 +1,5 @@
+/// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+/// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 /// @description movement
 function pl_normalState() {
 	mSpeed = mSpeedDefault;
@@ -12,11 +14,20 @@ function pl_normalState() {
 	}
 
 	//jump if you are on the ground and not holding the jump button
-	if(onGround){
+	if(onGround){ 
+		numOfAirJumps = 1
 	    if(jump && !jumpHold){
 	        ySpeed = jPower;
 	        squash_stretch(0.7,1.3);
 	    }
+	} else {
+		if(jump && !jumpHold && numOfAirJumps > 0) {
+			ySpeed = jPower;
+	        squash_stretch(0.7,1.3);
+			numOfAirJumps --
+		} else if(numOfAirJumps <= 0) {
+			numOfAirJumps = 0
+		}
 	}
 
 	//jump code

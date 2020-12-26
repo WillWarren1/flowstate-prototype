@@ -1,4 +1,6 @@
-function weapon_stats() {
+ // foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
+ function weapon_stats() {
 	//set sprites and frame data based on current weapon
 
 	switch(weapon){
@@ -17,7 +19,7 @@ function weapon_stats() {
 	        downSpriteG  = sprSword_Attack_Down_G;
 	        downSpriteA  = sprSword_Attack_Down_A;
 	        fd_side      = fd_sword_side;
-	        fd_up        = fd_sword_up;
+	        fd_up        = fd_sword_up; 
 	        fd_down      = fd_sword_down;
 	    break;
     

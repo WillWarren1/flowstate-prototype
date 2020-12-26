@@ -26,11 +26,14 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c1d1c04d-46fb-4914-b1be-e044784bf085","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c1d1c04d-46fb-4914-b1be-e044784bf085","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":{"name":"0ecdf0a3-d702-46af-91da-8814a88afe9e","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"c1d1c04d-46fb-4914-b1be-e044784bf085","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":{"name":"0ecdf0a3-d702-46af-91da-8814a88afe9e","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSword_Attack_Up_G","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"c1d1c04d-46fb-4914-b1be-e044784bf085","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e7b11ffe-0173-4863-bafa-784dce27b9f2","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"e7b11ffe-0173-4863-bafa-784dce27b9f2","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":{"name":"0ecdf0a3-d702-46af-91da-8814a88afe9e","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e7b11ffe-0173-4863-bafa-784dce27b9f2","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":{"name":"0ecdf0a3-d702-46af-91da-8814a88afe9e","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSword_Attack_Up_G","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"e7b11ffe-0173-4863-bafa-784dce27b9f2","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"26bba7bb-a537-4b6c-83b4-a734c2a0425a","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"26bba7bb-a537-4b6c-83b4-a734c2a0425a","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":{"name":"0ecdf0a3-d702-46af-91da-8814a88afe9e","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"26bba7bb-a537-4b6c-83b4-a734c2a0425a","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"LayerId":{"name":"0ecdf0a3-d702-46af-91da-8814a88afe9e","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSword_Attack_Up_G","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","name":"26bba7bb-a537-4b6c-83b4-a734c2a0425a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -52,7 +55,7 @@
             {"id":"53b33611-14f4-4211-936d-53fc86e18bba","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26bba7bb-a537-4b6c-83b4-a734c2a0425a","path":"sprites/sprSword_Attack_Up_G/sprSword_Attack_Up_G.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

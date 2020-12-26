@@ -1,3 +1,5 @@
+/// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+/// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 function pl_endStep() {
 	//inherit code from parent
 	event_inherited();
@@ -38,6 +40,9 @@ function pl_endStep() {
 	    depth  = hitBy.depth;
 	    hitStun = hitBy.hitStun;
 	    currentState = states.tumble;
+		if(hp <= 0){
+			currentState = states.dead	
+		}
 	    hit = false;
 	}
 

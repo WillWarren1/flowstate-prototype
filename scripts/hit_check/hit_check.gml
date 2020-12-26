@@ -1,3 +1,5 @@
+/// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+/// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 function hit_check() {
 	//hitbox
 	if(hitbox != -1){
@@ -22,6 +24,7 @@ function hit_check() {
 	                    if(!ignore){
 	                        other.owner.hit = true;
 	                        other.owner.hitBy = id;
+							other.owner.hp -= 400;
 	                        ds_list_add(ignoreList,other.owner);
 	                    }
 	                }

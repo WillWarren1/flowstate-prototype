@@ -1,3 +1,5 @@
+/// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+/// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 function pl_create() {
 	//inherit from parent object
 	event_inherited();
@@ -19,6 +21,7 @@ function pl_create() {
 
 	jump  = false;
 	jumpHold = false;
+	numOfAirJumps = 1;
 
 	attack = false;
 	attackHold = false;

@@ -1,4 +1,4 @@
-/// @description squash_stretch( xScale, yScale );
+ /// @description squash_stretch( xScale, yScale );
 /// @function squash_stretch
 /// @param  xScale
 /// @param  yScale 
