@@ -19,7 +19,7 @@ function pl_create() {
 	upHold    = up;
 	downHold  = down;
 
-	jump  = false;
+	jump  = false;	   
 	jumpHold = false;
 	numOfAirJumps = 1;
 

@@ -7,8 +7,37 @@ function pl_dashState() {
 	dashDur -= 1 * god.gameSpeed;
 	if(dashDur <= 0){
 	    state_reset();
+	} else if(dashDur <= 8 && dashDur >= 2) {
+		//attack
+		//change to the attack state and relevant subState based on direction and attack
+		if(attack && !attackHold){
+		    //grounded attacks
+		    if(onGround){
+		        if(up){
+		            subState = attacks.up_ground;
+		            squash_stretch(0.7,1.3);
+		        }else if(down){
+		            subState = attacks.down_ground;
+		            squash_stretch(0.7,1.3);
+		        }else{
+		            subState = attacks.side_ground;
+		            squash_stretch(1.3,0.7);
+		        }
+		    }else{
+		        //air attacks
+		        if(up){
+		            subState = attacks.up_air;
+		            squash_stretch(0.7,1.3);
+		        }else if(down){
+		            subState = attacks.down_air;
+		            squash_stretch(0.7,1.3);
+		        }else{
+		            subState = attacks.side_air;
+		            squash_stretch(1.3,0.7);
+		        }
+		    }
+		    currentState = states.attack;
+		    frame_reset();
+		}
 	}
-
-
-
 }
