@@ -3,30 +3,25 @@
 function pl_controller() {
 	//player button inputs
 
-	if(player == 0){
 	    leftHold  = left;
 	    rightHold = right;
 	    upHold    = up;
 	    downHold  = down;
     
-	    left  = keyboard_check(vk_left);
-	    right = keyboard_check(vk_right);
-	    up    = keyboard_check(vk_up);
-	    down  = keyboard_check(vk_down);
+	    left  = puppet_check("left");
+	    right = puppet_check("right");
+	    up    = puppet_check("up");
+	    down  = puppet_check("down");
     
 	    jumpHold = jump;
-	    jump = keyboard_check(ord("Q"));
+	    jump = puppet_check("jump");
     
 	    attackHold = attack;
-	    attack = keyboard_check(ord("W"));
+	    attack = puppet_check("attack");
     
 	    dashHold = dash;
-	    dash = keyboard_check(ord("E"));
+	    dash = puppet_check("dash");
     
 	    itemHold = item;
-	    item = keyboard_check(ord("R"));
-	}
-
-
-
+	    item = puppet_check("item");
 }

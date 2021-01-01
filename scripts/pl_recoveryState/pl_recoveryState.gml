@@ -7,7 +7,7 @@ function pl_recoveryState() {
 	if(recoverDur <= 0){
 	    recoverDur = 35;
 	    state_reset();
-	} else if (recoverDur <= 35 && recoverDur >= 26) {
+	} else if (recoverDur <= 35 && recoverDur >= 22) {
 		//dash
 		if(dash && !dashHold){
 	      dashDur = dashDurMax;
