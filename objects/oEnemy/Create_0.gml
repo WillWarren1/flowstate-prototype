@@ -8,5 +8,5 @@ player = -1;
 directionalIntent = "";
 actionIntent = ""
 
-previousState = actionIntent
+previousActionIntent = actionIntent
 previouslyFacing = facing;
