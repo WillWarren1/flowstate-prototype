@@ -24,7 +24,7 @@ function hit_check() {
 	                    if(!ignore){
 	                        other.owner.hit = true;
 	                        other.owner.hitBy = id;
-							other.owner.hp -= 400;
+							other.owner.hp -= damage;
 	                        ds_list_add(ignoreList,other.owner);
 	                    }
 	                }

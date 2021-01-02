@@ -1,5 +1,6 @@
 /// @description intent cooldown
 // You can write your code in this editor
 
-intent = ""
+actionIntent = previousState
+facing = previouslyFacing
 

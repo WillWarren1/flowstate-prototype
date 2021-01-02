@@ -7,4 +7,5 @@ if (playerInstanceDistance < 40) {
 	playerWithinSight = true;
 } else {
 	playerWithinSight = false;
+	directionalIntent = ""
 }

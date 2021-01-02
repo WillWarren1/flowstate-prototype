@@ -80,7 +80,13 @@ function pl_normalState() {
 	    //ground dash
 	    }else if(onGround){
 	        dashDur = dashDurMax;
-	        xSpeed = 7 * facing;
+			if (leftHold) {
+				xSpeed = -7;
+			} else if (rightHold) {
+				xSpeed = 7;
+			} else {
+				xSpeed = 7 * facing;
+			}
 	        squash_stretch(1.3,0.7);
 	        currentState = states.dash;    
 	    }

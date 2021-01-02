@@ -38,28 +38,28 @@ function puppet_check(argument0){
 	} else {
 		switch(argument0) {
 			case "left":
-				return !is_undefined(self.intent) && self.intent == "left";
+				return !is_undefined(self.directionalIntent) && self.directionalIntent == "left";
 			break;
 			case "right":
-				return !is_undefined(self.intent) && self.intent == "right"
+				return !is_undefined(self.directionalIntent) && self.directionalIntent == "right"
 			break;
 			case "up":
-				return !is_undefined(self.intent) && self.intent == "up"
+				return !is_undefined(self.directionalIntent) && self.directionalIntent == "up"
 			break;
 			case "down":
-				return !is_undefined(self.intent) && self.intent == "down"
+				return !is_undefined(self.directionalIntent) && self.directionalIntent == "down"
 			break;
 			case "jump":
-				return !is_undefined(self.intent) && self.intent == "jump"
+				return !is_undefined(self.actionIntent) && self.actionIntent == "jump"
 			break;
 			case "attack":
-				return !is_undefined(self.intent) && self.intent == "attack"
+				return !is_undefined(self.actionIntent) && self.actionIntent == "attack"
 			break;
 			case "dash":
-				return !is_undefined(self.intent) && self.intent == "dash"
+				return !is_undefined(self.actionIntent) && self.actionIntent == "dash"
 			break;
 			case "item":
-				return !is_undefined(self.intent) && self.intent == "item"
+				return !is_undefined(self.actionIntent) && self.actionIntent == "item"
 			break;
 		}
 	}

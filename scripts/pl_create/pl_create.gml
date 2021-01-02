@@ -1,4 +1,4 @@
-/// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
+ /// foundation of this file was built by Rat Casket and purchased in the Bundle for Racial Justice and Equality.
 /// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 function pl_create() {
 	//inherit from parent object
@@ -82,7 +82,7 @@ function pl_create() {
 	animation_create();
 
 	//weapons
-	weapon = weapons.sword;
+	weapon = weapons.spear;
 	weapon_stats();
 
 	//destroy
