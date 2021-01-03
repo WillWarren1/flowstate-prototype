@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite51",
-    "path": "sprites/Sprite51/Sprite51.yy",
+    "name": "Sprite52",
+    "path": "sprites/Sprite52/Sprite52.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"killzone","path":"objects/killzone/killzone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"killzone","path":"objects/killzone/killzone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oFlowCoin","path":"objects/oFlowCoin/oFlowCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "killzone",
+  "name": "oFlowCoin",
   "tags": [],
   "resourceType": "GMObject",
 }
