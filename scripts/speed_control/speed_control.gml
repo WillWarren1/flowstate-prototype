@@ -21,14 +21,14 @@ function speed_control() {
 
 	//terminal speed
 	if(ySpeed  >= tSpeed){
-	    ySpeed = tSpeed;
+	    ySpeed = tSpeed * flow;
 	}   
 
 	//air accel
 	if(!onGround){
-	    aSpeed = aSpeedDefault * 0.25;
+	    aSpeed = aSpeedDefault * 0.25 * flow;
 	}else{
-	    aSpeed = aSpeedDefault;
+	    aSpeed = aSpeedDefault * flow;
 	}
 
 

@@ -2,7 +2,7 @@
 /// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 /// @description movement
 function pl_normalState() {
-	mSpeed = mSpeedDefault;
+	mSpeed = mSpeedDefault * flow;
 
 	//move left and right
 	if(left){
@@ -17,12 +17,14 @@ function pl_normalState() {
 	if(onGround){ 
 		numOfAirJumps = 1
 	    if(jump && !jumpHold){
-	        ySpeed = jPower;
+			var jumpFlow = 1 > (flow*.5) ? 1 : (flow*.5)
+	        ySpeed = jPower * jumpFlow;
 	        squash_stretch(0.7,1.3);
 	    }
 	} else {
 		if(jump && !jumpHold && numOfAirJumps > 0) {
-			ySpeed = jPower;
+			var jumpFlow = 1 > (flow*.5) ? 1 : (flow*.5)
+			ySpeed = jPower * jumpFlow;
 	        squash_stretch(0.7,1.3);
 			numOfAirJumps --
 		} else if(numOfAirJumps <= 0) {

@@ -30,7 +30,12 @@ function pl_endStep() {
 	//hit
 	if(hit){
 	    squash_stretch(1.5,1.5);
-	    weaponSprite = sprEmpty;       
+	    weaponSprite = sprEmpty;  
+		if (player == 0) {
+			god.shakeForce = 1.25
+		} else {
+			god.shakeForce = 1
+		}
 	    god.shake  = true;
 	    god.freeze = true;
 	    y --;
