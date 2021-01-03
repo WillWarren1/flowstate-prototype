@@ -1,6 +1,6 @@
 /// @description dodge attack
 // You can write your code in this editor
-if (currentState != states.tumble) {
+if (currentState != states.tumble && hp > 0) {
 	if (instance_exists(oPlayer) && instance_nearest(x, y, oPlayer).currentState == states.attack) {
 		var hitboxDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
 		if ((hitboxDirection <= 90 || hitboxDirection >= 270) && facing == 1) {
