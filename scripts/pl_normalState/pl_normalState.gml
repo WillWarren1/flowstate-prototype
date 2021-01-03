@@ -68,10 +68,10 @@ function pl_normalState() {
 	}
 
 	//dash
-	if(dash && !dashHold){
+	if(dash && !dashHold && canDash){
 	    //air dash. only dash in the air if airDash is false
 	    //set airDash to true if you have dashed in the air
-	    if(!onGround){
+	    if(!onGround && flow > 1.5){
 	        if(!airDash){
 	            dashDur = dashDurMax;
 	            xSpeed = 7 * facing;
@@ -91,6 +91,10 @@ function pl_normalState() {
 			}
 	        squash_stretch(1.3,0.7);
 	        currentState = states.dash;    
+			if (alarm_get(0) <= 0) {
+				canDash = false;
+				alarm_set(0, room_speed * 2);
+			}
 	    }
 	}
 
