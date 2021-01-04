@@ -2,7 +2,9 @@ function pl_attackState() {
 	//speed adjustments
 	if(onGround){
 	    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
-	}else{
+	}else if(flow > 1.5){
+		xSpeed = facing > 0 ? approach(xSpeed + 0.2,0,aSpeed * god.gameSpeed) : approach(xSpeed - 0.2,0,aSpeed * god.gameSpeed);
+	} else{
 	    xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
 	}
 
