@@ -82,9 +82,9 @@ function pl_normalState() {
 	    //ground dash
 	    }else if(onGround){
 	        dashDur = dashDurMax;
-			if (leftHold) {
+			if (left || leftHold) {
 				xSpeed = -7;
-			} else if (rightHold) {
+			} else if (right || rightHold) {
 				xSpeed = 7;
 			} else {
 				xSpeed = 7 * facing;

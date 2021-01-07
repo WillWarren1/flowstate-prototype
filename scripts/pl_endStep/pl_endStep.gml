@@ -25,6 +25,9 @@ function pl_endStep() {
 	    case states.tumble:
 	        pl_tumbleState();
 	    break;
+		case states.dead:
+	        pl_deadState();
+	    break;
 	}
 
 	//hit

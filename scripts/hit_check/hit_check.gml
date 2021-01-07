@@ -7,7 +7,7 @@ function hit_check() {
 	        //collision check  
 	        //checking the collision from the hurtbox object
 	        with(oHurtbox){
-	            if(place_meeting(x,y,other) && other.owner != owner){
+	            if(place_meeting(x,y,other) && other.owner != owner && !other.owner.destroy){
 	                //ignore check
 	                //checking collision from the hitbox object
 	                with(other){
