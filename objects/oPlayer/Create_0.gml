@@ -2,3 +2,4 @@ script_execute(pl_create,0,0,0,0,0);
 
 flow = 1;
 canDash = true;
+canGiveFlow = false;

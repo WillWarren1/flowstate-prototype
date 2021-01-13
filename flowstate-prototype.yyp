@@ -143,8 +143,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"test","path":"rooms/test/test.yy",},
     {"name":"test2","path":"rooms/test2/test2.yy",},
+    {"name":"test","path":"rooms/test/test.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

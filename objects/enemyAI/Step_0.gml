@@ -49,6 +49,7 @@ if (ds_list_size(enemyList) > 0) {
 				}
 			} else {
 				if (alarm_get(3) <= 0) {
+					canGiveFlow = true
 					alarm_set(3, room_speed * 4);
 				}
 			}

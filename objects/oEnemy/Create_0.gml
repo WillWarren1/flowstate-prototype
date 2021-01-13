@@ -12,3 +12,4 @@ previousActionIntent = actionIntent;
 previouslyFacing = facing;
 
 flow = 1;
+canGiveFlow = false;

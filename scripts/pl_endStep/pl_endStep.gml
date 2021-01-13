@@ -35,7 +35,7 @@ function pl_endStep() {
 	    squash_stretch(1.5,1.5);
 	    weaponSprite = sprEmpty;  
 		if (player == 0) {
-			god.shakeForce = 1.25
+			god.shakeForce = 1.35
 		} else {
 			god.shakeForce = 1
 		}
@@ -47,9 +47,18 @@ function pl_endStep() {
 	    facing = hitBy.owner.facing * -1;
 	    depth  = hitBy.depth;
 	    hitStun = hitBy.hitStun;
-	    currentState = states.tumble;
 		if(hp <= 0){
-			currentState = states.dead	
+			if (canGiveFlow) {
+				hitBy.owner.flow += .25	
+				canGiveFlow = false
+			}
+			currentState = states.dead
+		} else {
+			currentState = states.tumble;	
+		}
+		
+		if (flow > 0.75) {
+			flow -= 0.25;
 		}
 	    hit = false;
 	}
