@@ -29,8 +29,8 @@ function pl_animation() {
 	            if(!left && !right){
 	                if(down){
 	                    //crouch
-	                    animation_set(fd_pl_idle,sprDinoRecover); //sprPlayer_Recovery_Base was here
-	                    weaponSprite = sprEmpty;
+	                    animation_set(fd_pl_idle,weaponRecover); //sprPlayer_Recovery_Base was here
+	                    weaponSprite = player == 0 ? weaponRecover : sprEmpty;
 	                }else{
 	                    //body
 	                    animation_set(fd_pl_idle,idleSprite);
@@ -63,68 +63,68 @@ function pl_animation() {
 	    break;
     
 	    case states.dash:
-	        animation_set(fd_pl_roll,sprDinoDash); //sprPlayer_Dash_Base was here
-	        weaponSprite = sprEmpty;
+	        animation_set(fd_pl_roll,sprPlayer_Dash_Base); //sprPlayer_Dash_Base was here
+	        weaponSprite = player == 0 ? sprDinoDash : sprEmpty;  
 	    break;
     
 	    case states.dead:
-	        animation_set(fd_pl_dead,sprDinoDead); //sprPlayer_Dead_Base was here
-	        weaponSprite = sprEmpty;        
+	        animation_set(fd_pl_dead,sprPlayer_Dead_Base); //sprPlayer_Dead_Base was here
+	        weaponSprite = player == 0 ? sprDinoDead : sprEmpty;        
 	    break;
     
 	    case states.attack:
 	        switch(subState){
 	            case attacks.side_ground:
 	                animation_set(fd_side,sideSpriteG);
-	                weaponSprite = sprEmpty;
+	                weaponSprite = player == 0 ? sideSpriteG : sprEmpty;
 	            break;
             
 	            case attacks.side_air:
 	                animation_set(fd_side,sideSpriteA);
-	                weaponSprite = sprEmpty;            
+	               weaponSprite = player == 0 ? sideSpriteA : sprEmpty;            
 	            break;
             
 	            case attacks.up_ground:
 	                animation_set(fd_up,upSpriteG);
-	                weaponSprite = sprEmpty;            
+	                weaponSprite = player == 0 ? upSpriteG : sprEmpty;        
 	            break;
             
 	            case attacks.up_air:
 	                animation_set(fd_up,upSpriteA);
-	                weaponSprite = sprEmpty;            
+	                weaponSprite = player == 0 ? upSpriteA : sprEmpty;          
 	            break;
             
 	            case attacks.down_ground:
 	                animation_set(fd_down,downSpriteG);
-	                weaponSprite = sprEmpty;            
+	                weaponSprite = player == 0 ? downSpriteG : sprEmpty;         
 	            break;
             
 	            case attacks.down_air:
 	                animation_set(fd_down,downSpriteA);
-	                weaponSprite = sprEmpty;            
+	                weaponSprite = player == 0 ? downSpriteA : sprEmpty;            
 	            break;
 	        }
 	    break;
     
 	    case states.recovery:
-	        animation_set(fd_pl_recovery,sprDinoRecover);//sprPlayer_Recovery_Base was here
-	        weaponSprite = sprEmpty;
+	        animation_set(fd_pl_recovery,sprPlayer_Recovery_Base);//sprPlayer_Recovery_Base was here
+	        weaponSprite = player == 0 ? sprDinoRecover : sprEmpty; 
 	    break;
     
 	    case states.tumble:
 	        //draw hit sprite during hit stop
 	        if(god.freeze){
-	            animation_set(fd_pl_tumble,sprDinoHurt); //sprPlayer_Hit_Base was here
-	            weaponSprite = sprEmpty;               
+	            animation_set(fd_pl_tumble,sprPlayer_Hit_Base); //sprPlayer_Hit_Base was here
+	            weaponSprite = player == 0 ? sprDinoHurt : sprEmpty;                
 	        }else{
 	            //laying down on the ground after being hit
 	            if(onGround){
-	                animation_set(fd_pl_tumble,sprDinoDead); //sprPlayer_Dead_Base was here
-	                weaponSprite = sprEmpty;  
+	                animation_set(fd_pl_tumble,sprPlayer_Dead_Base ); //sprPlayer_Dead_Base was here
+	                weaponSprite = player == 0 ? sprDinoDead : sprEmpty; 
 	            //flying through the air after being hit      
 	            }else{
-	                animation_set(fd_pl_dead,sprDinoTumble); //sprPlayer_Tumble_Base was here
-	                weaponSprite = sprEmpty;        
+	                animation_set(fd_pl_dead,sprPlayer_Tumble_Base); //sprPlayer_Tumble_Base was here
+	                weaponSprite = player == 0 ? sprDinoTumble : sprEmpty;        
 	            }
 	        }
 	    break;
