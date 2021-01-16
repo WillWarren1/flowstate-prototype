@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"408ad360-5549-46bc-aecb-45d52d89b226","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "flowstate-prototype",
-    "path": "flowstate-prototype.yyp",
+    "name": "flowstate 1-15-21 (player animation)",
+    "path": "flowstate 1-15-21 (player animation).yyp",
   },
   "resourceVersion": "1.0",
   "name": "Sprite50",

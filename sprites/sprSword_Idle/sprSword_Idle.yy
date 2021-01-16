@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c811ce1d-b7f1-4477-b0ba-e76c28275ba0","path":"sprites/sprSword_Idle/sprSword_Idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c811ce1d-b7f1-4477-b0ba-e76c28275ba0","path":"sprites/sprSword_Idle/sprSword_Idle.yy",},"LayerId":{"name":"e2ed63f1-90e8-4ac1-b037-82ce1758c768","path":"sprites/sprSword_Idle/sprSword_Idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"c811ce1d-b7f1-4477-b0ba-e76c28275ba0","path":"sprites/sprSword_Idle/sprSword_Idle.yy",},"LayerId":{"name":"e2ed63f1-90e8-4ac1-b037-82ce1758c768","path":"sprites/sprSword_Idle/sprSword_Idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSword_Idle","path":"sprites/sprSword_Idle/sprSword_Idle.yy",},"resourceVersion":"1.0","name":"c811ce1d-b7f1-4477-b0ba-e76c28275ba0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

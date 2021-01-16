@@ -26,10 +26,8 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"8d7497c6-33ea-46f9-b02b-450c6b1bc348","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"8d7497c6-33ea-46f9-b02b-450c6b1bc348","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"LayerId":{"name":"6d00aae1-73fa-474b-8576-3ecfb88f0009","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"8d7497c6-33ea-46f9-b02b-450c6b1bc348","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"LayerId":{"name":"6d00aae1-73fa-474b-8576-3ecfb88f0009","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSword_Jump","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"resourceVersion":"1.0","name":"8d7497c6-33ea-46f9-b02b-450c6b1bc348","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"2fe469fd-0b87-423e-a138-e512e1b1de30","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fe469fd-0b87-423e-a138-e512e1b1de30","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"LayerId":{"name":"6d00aae1-73fa-474b-8576-3ecfb88f0009","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"2fe469fd-0b87-423e-a138-e512e1b1de30","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"LayerId":{"name":"6d00aae1-73fa-474b-8576-3ecfb88f0009","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprSword_Jump","path":"sprites/sprSword_Jump/sprSword_Jump.yy",},"resourceVersion":"1.0","name":"2fe469fd-0b87-423e-a138-e512e1b1de30","tags":[],"resourceType":"GMSpriteFrame",},
   ],

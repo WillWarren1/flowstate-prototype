@@ -64,17 +64,17 @@
 	    //spear
 	    case weapons.spear:
 	        canCharge = false;
-	        idleSprite   = sprSpear_Idle;
-	        weaponIdle   = sprSpear_Idle;
-	        weaponRun    = sprSpear_Run;
-	        weaponJump   = sprSpear_Jump;
-	        weaponSprite = sprSpear_Idle;
-	        sideSpriteG  = sprSpear_Attack_Side_G;
-	        sideSpriteA  = sprSpear_Attack_Side_A;
-	        upSpriteG    = sprSpear_Attack_Up_G;
-	        upSpriteA    = sprSpear_Attack_Up_A;
-	        downSpriteG  = sprSpear_Attack_Down_G;
-	        downSpriteA  = sprSpear_Attack_Down_A;
+	        idleSprite   = sprDinoIdle //sprSpear_Idle;
+	        weaponIdle   = sprDinoIdle //sprSpear_Idle;
+	        weaponRun    = sprDinoRun //sprSpear_Run;
+	        weaponJump   = sprDinoJump //sprSpear_Jump;
+	        weaponSprite = sprPlayer_Idle_Base //sprSpear_Idle;
+	        sideSpriteG  = sprDinoAttack_G //sprSpear_Attack_Side_G;
+	        sideSpriteA  = sprDinoAttack_A //sprSpear_Attack_Side_A;
+	        upSpriteG    = sprDinoAttack_Up_G //sprSpear_Attack_Up_G;
+	        upSpriteA    = sprDinoAttack_Up_A //sprSpear_Attack_Up_A;
+	        downSpriteG  = sprDinoAttack_Down_G //sprSpear_Attack_Down_G;
+	        downSpriteA  = sprDinoAttack_Down_A //sprSpear_Attack_Down_A;
 	        fd_side      = fd_spear_side;
 	        fd_up        = fd_spear_up;
 	        fd_down      = fd_spear_down;

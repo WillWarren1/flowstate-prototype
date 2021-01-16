@@ -29,7 +29,7 @@ function pl_animation() {
 	            if(!left && !right){
 	                if(down){
 	                    //crouch
-	                    animation_set(fd_pl_idle,sprPlayer_Recovery_Base);
+	                    animation_set(fd_pl_idle,sprDinoRecover); //sprPlayer_Recovery_Base was here
 	                    weaponSprite = sprEmpty;
 	                }else{
 	                    //body
@@ -38,12 +38,12 @@ function pl_animation() {
 	                }
 	            //run
 	            }else{
-	                animation_set(fd_pl_run,sprPlayer_Run_Base);
+	                animation_set(fd_pl_run,sprPlayer_Run_Base); //sprPlayerRunBase was here
 	                weaponSprite = weaponRun;
 	            }
 	        //in air animation
 	        }else{
-	            animation_set(fd_pl_jump,sprPlayer_Jump_Base);
+	            animation_set(fd_pl_jump,sprPlayer_Idle_Base); //sprPlayerJumpBase was here
 	            weaponSprite = weaponJump;
 	            //change sprite frame based on vertical speed
 	            if(ySpeed < 1){
@@ -63,12 +63,12 @@ function pl_animation() {
 	    break;
     
 	    case states.dash:
-	        animation_set(fd_pl_roll,sprPlayer_Dash_Base);
+	        animation_set(fd_pl_roll,sprDinoDash); //sprPlayer_Dash_Base was here
 	        weaponSprite = sprEmpty;
 	    break;
     
 	    case states.dead:
-	        animation_set(fd_pl_dead,sprPlayer_Dead_Base);
+	        animation_set(fd_pl_dead,sprDinoDead); //sprPlayer_Dead_Base was here
 	        weaponSprite = sprEmpty;        
 	    break;
     
@@ -107,23 +107,23 @@ function pl_animation() {
 	    break;
     
 	    case states.recovery:
-	        animation_set(fd_pl_recovery,sprPlayer_Recovery_Base);
+	        animation_set(fd_pl_recovery,sprDinoRecover);//sprPlayer_Recovery_Base was here
 	        weaponSprite = sprEmpty;
 	    break;
     
 	    case states.tumble:
 	        //draw hit sprite during hit stop
 	        if(god.freeze){
-	            animation_set(fd_pl_tumble,sprPlayer_Hit_Base);
+	            animation_set(fd_pl_tumble,sprDinoHurt); //sprPlayer_Hit_Base was here
 	            weaponSprite = sprEmpty;               
 	        }else{
 	            //laying down on the ground after being hit
 	            if(onGround){
-	                animation_set(fd_pl_tumble,sprPlayer_Dead_Base);
+	                animation_set(fd_pl_tumble,sprDinoDead); //sprPlayer_Dead_Base was here
 	                weaponSprite = sprEmpty;  
 	            //flying through the air after being hit      
 	            }else{
-	                animation_set(fd_pl_dead,sprPlayer_Tumble_Base);
+	                animation_set(fd_pl_dead,sprDinoTumble); //sprPlayer_Tumble_Base was here
 	                weaponSprite = sprEmpty;        
 	            }
 	        }
