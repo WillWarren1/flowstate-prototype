@@ -5,8 +5,8 @@ function pl_frameData() {
 	//create and store frame data in lists, which are then stored in the master list.
 
 	//movement
-	fd_pl_idle     = frame_factory(1);
-	fd_pl_run      = frame_factory(4,4,4,4,4);
+	fd_pl_idle     = frame_factory(8,8,8,8);//changed was (1)
+	fd_pl_run      = frame_factory(4,4,4,4,4,4);//changed was (4,4,4,4,4)
 	fd_pl_jump     = frame_factory(1);
 	fd_pl_roll     = frame_factory(1);
 	fd_pl_hit      = frame_factory(1);

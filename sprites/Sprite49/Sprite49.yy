@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"32e54838-a1c9-4748-b67c-62cd5111c4b3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "flowstate-prototype",
-    "path": "flowstate-prototype.yyp",
+    "name": "flowstate 1-15-21 (player animation)",
+    "path": "flowstate 1-15-21 (player animation).yyp",
   },
   "resourceVersion": "1.0",
   "name": "Sprite49",

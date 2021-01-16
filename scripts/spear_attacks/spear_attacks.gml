@@ -5,7 +5,7 @@ function spear_attacks() {
 	switch(subState){    
 	    case attacks.side_ground:
 			if(frame_check(1,0)){
-	            hitbox_create(8*facing,-14,20*facing,6,6,3.3*facing,-2.2,35,290);
+	            hitbox_create(10*facing,-14,28*facing,6,6,3.3*facing,-2.2,35,290); //was 8*facing for argument1 and 20*facing for argument3
 	        }
 	    break;
 	    case attacks.side_air:
