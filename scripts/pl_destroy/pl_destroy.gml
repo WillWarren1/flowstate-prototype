@@ -1,6 +1,8 @@
 function pl_destroy() {
 	if(!destroy)exit;
 	instance_destroy();
+	// hamfisted way to make sure hurtbox dies too
+	instance_destroy(hurtbox);
 	//loop through our list of frame data lists BACKWARDS
 	//destroy each list of frame data, and then delete the position from the master list
 	for(i = ds_list_size(fd_master) - 1; i >= 0; i --){

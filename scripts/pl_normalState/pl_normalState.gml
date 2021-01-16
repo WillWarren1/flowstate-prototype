@@ -2,7 +2,11 @@
 /// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 /// @description movement
 function pl_normalState() {
-	mSpeed = mSpeedDefault * flow;
+	var moveFlow = .75 > flow ? .75 : flow
+	if (moveFlow > 2.3) {
+		moveFlow = 2.3
+	}
+	mSpeed = mSpeedDefault * moveFlow;
 
 	//move left and right
 	if(left){
@@ -17,13 +21,19 @@ function pl_normalState() {
 	if(onGround){ 
 		numOfAirJumps = 1
 	    if(jump && !jumpHold){
-			var jumpFlow = 1 > (flow*.5) ? 1 : (flow*.5)
+			var jumpFlow = 1 > (flow*.4) ? 1 : (flow*.4)
+			if (jumpFlow > 1.5) {
+				jumpFlow = 1.5
+			}
 	        ySpeed = jPower * jumpFlow;
 	        squash_stretch(0.7,1.3);
 	    }
 	} else {
 		if(jump && !jumpHold && numOfAirJumps > 0) {
 			var jumpFlow = 1 > (flow*.5) ? 1 : (flow*.5)
+			if (jumpFlow > 1.3) {
+				jumpFlow = 1.3
+			}
 			ySpeed = jPower * jumpFlow;
 	        squash_stretch(0.7,1.3);
 			numOfAirJumps --
@@ -68,10 +78,10 @@ function pl_normalState() {
 	}
 
 	//dash
-	if(dash && !dashHold){
+	if(dash && !dashHold && canDash){
 	    //air dash. only dash in the air if airDash is false
 	    //set airDash to true if you have dashed in the air
-	    if(!onGround){
+	    if(!onGround && flow > 1.5){
 	        if(!airDash){
 	            dashDur = dashDurMax;
 	            xSpeed = 7 * facing;
@@ -82,15 +92,19 @@ function pl_normalState() {
 	    //ground dash
 	    }else if(onGround){
 	        dashDur = dashDurMax;
-			if (leftHold) {
+			if (left || leftHold) {
 				xSpeed = -7;
-			} else if (rightHold) {
+			} else if (right || rightHold) {
 				xSpeed = 7;
 			} else {
 				xSpeed = 7 * facing;
 			}
 	        squash_stretch(1.3,0.7);
 	        currentState = states.dash;    
+			if (alarm_get(0) <= 0) {
+				canDash = false;
+				alarm_set(0, room_speed * 2);
+			}
 	    }
 	}
 

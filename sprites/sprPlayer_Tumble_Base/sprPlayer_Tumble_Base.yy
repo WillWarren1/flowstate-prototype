@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"28f97e62-b59c-48cc-b941-9207af886f2b","path":"sprites/sprPlayer_Tumble_Base/sprPlayer_Tumble_Base.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"28f97e62-b59c-48cc-b941-9207af886f2b","path":"sprites/sprPlayer_Tumble_Base/sprPlayer_Tumble_Base.yy",},"LayerId":{"name":"34e40888-32e5-4548-9b49-89230caef414","path":"sprites/sprPlayer_Tumble_Base/sprPlayer_Tumble_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"28f97e62-b59c-48cc-b941-9207af886f2b","path":"sprites/sprPlayer_Tumble_Base/sprPlayer_Tumble_Base.yy",},"LayerId":{"name":"34e40888-32e5-4548-9b49-89230caef414","path":"sprites/sprPlayer_Tumble_Base/sprPlayer_Tumble_Base.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprPlayer_Tumble_Base","path":"sprites/sprPlayer_Tumble_Base/sprPlayer_Tumble_Base.yy",},"resourceVersion":"1.0","name":"28f97e62-b59c-48cc-b941-9207af886f2b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

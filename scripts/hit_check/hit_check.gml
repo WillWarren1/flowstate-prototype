@@ -7,7 +7,7 @@ function hit_check() {
 	        //collision check  
 	        //checking the collision from the hurtbox object
 	        with(oHurtbox){
-	            if(place_meeting(x,y,other) && other.owner != owner){
+	            if(place_meeting(x,y,other) && other.owner != owner && !other.owner.destroy){
 	                //ignore check
 	                //checking collision from the hitbox object
 	                with(other){
@@ -25,9 +25,6 @@ function hit_check() {
 	                        other.owner.hit = true;
 	                        other.owner.hitBy = id;
 							other.owner.hp -= damage;
-							if (other.owner.flow > 0.75) {
-								other.owner.flow -= 0.25;
-							}
 	                        ds_list_add(ignoreList,other.owner);
 	                    }
 	                }

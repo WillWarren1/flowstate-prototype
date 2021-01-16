@@ -1,14 +1,15 @@
 script_execute(pl_create,0,0,0,0,0);
 
-
+canDash = true;
 playerWithinSight = false;
 playerInstanceDistance = 500;
-weapon = weapons.axe
+weapon = weapons.axe;
 player = -1;
 directionalIntent = "";
-actionIntent = ""
+actionIntent = "";
 
-previousActionIntent = actionIntent
+previousActionIntent = actionIntent;
 previouslyFacing = facing;
 
-flow = 1 
+flow = 1;
+canGiveFlow = false;

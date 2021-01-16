@@ -6,11 +6,13 @@
 	switch(weapon){
 	    //sword
 	    case weapons.sword:
-	        canCharge = false;
+	        playerRun = sprPlayer_Run_Base;
+			canCharge = false;
 	        idleSprite   = sprPlayer_Idle_Base;
 	        weaponIdle   = sprSword_Idle;
 	        weaponRun    = sprSword_Run;
 	        weaponJump   = sprSword_Jump;
+			weaponRecover = sprPlayer_Recovery_Base;
 	        weaponSprite = sprSword_Idle;
 	        sideSpriteG  = sprSword_Attack_Side_G;
 	        sideSpriteA  = sprSword_Attack_Side_A;
@@ -25,11 +27,13 @@
     
 	    //dagger
 	    case weapons.dagger:
-	        canCharge = false;
+	        playerRun = sprPlayer_Run_Base;
+			canCharge = false;
 	        idleSprite   = sprDagger_Idle;
 	        weaponIdle   = sprDagger_Idle;
 	        weaponRun    = sprDagger_Run;
 	        weaponJump   = sprDagger_Jump;
+			weaponRecover = sprPlayer_Recovery_Base;
 	        weaponSprite = sprDagger_Idle;
 	        sideSpriteG  = sprDagger_Attack_Side_G;
 	        sideSpriteA  = sprDagger_Attack_Side_A;
@@ -44,11 +48,13 @@
     
 	    //axe
 	    case weapons.axe:
+			playerRun = sprPlayer_Run_Base;
 	        canCharge = false;
 	        idleSprite   = sprAxe_Idle;
 	        weaponIdle   = sprAxe_Idle;
 	        weaponRun    = sprAxe_Run;
 	        weaponJump   = sprAxe_Jump;
+			weaponRecover = sprPlayer_Recovery_Base;
 	        weaponSprite = sprAxe_Idle;
 	        sideSpriteG  = sprAxe_Attack_Side_G;
 	        sideSpriteA  = sprAxe_Attack_Side_A;
@@ -64,17 +70,19 @@
 	    //spear
 	    case weapons.spear:
 	        canCharge = false;
-	        idleSprite   = sprSpear_Idle;
-	        weaponIdle   = sprSpear_Idle;
-	        weaponRun    = sprSpear_Run;
-	        weaponJump   = sprSpear_Jump;
-	        weaponSprite = sprSpear_Idle;
-	        sideSpriteG  = sprSpear_Attack_Side_G;
-	        sideSpriteA  = sprSpear_Attack_Side_A;
-	        upSpriteG    = sprSpear_Attack_Up_G;
-	        upSpriteA    = sprSpear_Attack_Up_A;
-	        downSpriteG  = sprSpear_Attack_Down_G;
-	        downSpriteA  = sprSpear_Attack_Down_A;
+	        idleSprite   = sprDinoIdle //sprSpear_Idle;
+	        weaponIdle   = sprDinoIdle //sprSpear_Idle;
+	        weaponRun    = sprDinoRun //sprSpear_Run;
+	        weaponJump   = sprDinoJump //sprSpear_Jump;
+			weaponRecover = sprDinoRecover // didnt exist before
+			//playerRun = sprPlayer_Run_Base;
+	        weaponSprite = sprPlayer_Idle_Base //sprSpear_Idle;
+	        sideSpriteG  = sprDinoAttack_G //sprSpear_Attack_Side_G;
+	        sideSpriteA  = sprDinoAttack_A //sprSpear_Attack_Side_A;
+	        upSpriteG    = sprDinoAttack_Up_G //sprSpear_Attack_Up_G;
+	        upSpriteA    = sprDinoAttack_Up_A //sprSpear_Attack_Up_A;
+	        downSpriteG  = sprDinoAttack_Down_G //sprSpear_Attack_Down_G;
+	        downSpriteA  = sprDinoAttack_Down_A //sprSpear_Attack_Down_A;
 	        fd_side      = fd_spear_side;
 	        fd_up        = fd_spear_up;
 	        fd_down      = fd_spear_down;
