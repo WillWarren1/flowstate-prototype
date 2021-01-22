@@ -57,10 +57,15 @@ function pl_endStep() {
 			currentState = states.tumble;	
 		}
 		
-		if (flow > 0.75) {
-			flow -= 0.25;
+		if (flow > 1){
+			flow = 1
+		} else if (flow <= 1) {
+			flow = 0.75
 		}
 	    hit = false;
+	}
+	if (flow >= 3) {
+		superJump = true;
 	}
 
 	//update hitbox position

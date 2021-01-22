@@ -3,8 +3,7 @@
 
 
 
-if (ds_list_size(enemyList) > 0) {
-	
+if (ds_list_size(enemyList) > 0) {	
 	var i;
 	for (i = 0; i < ds_list_size(enemyList); i++) {
 		var thisEnemy = ds_list_find_value(enemyList, i);
@@ -50,7 +49,53 @@ if (ds_list_size(enemyList) > 0) {
 			} else {
 				if (alarm_get(3) <= 0) {
 					canGiveFlow = true
-					alarm_set(3, room_speed * 4);
+					alarm_set(3, room_speed * 60);
+				} else {
+					if (point_distance(spawnX, spawnY, oPlayer.x, oPlayer.y) > 320 && !hasBeenReplaced) {
+						instance_create(spawnX, spawnY, oEnemy);
+						hasBeenReplaced = true;
+					}
+				}
+			}
+		}
+	}
+}
+
+if (ds_list_size(flyingEnemyList) > 0) {	
+	var index;
+	for (index = 0; index < ds_list_size(flyingEnemyList); index++) {
+		var thisFlyEnemy = ds_list_find_value(flyingEnemyList, index);
+		with(thisFlyEnemy) {
+			if (hp >= 0) {
+				if (playerWithinSight) {
+					var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
+					if (playerDirection >= 45 && playerDirection <= 135) {
+						if (directionalIntent != "up") {
+							directionalIntent = "up"
+						}
+					} else if (playerDirection <= 315 && playerDirection >= 225) {
+						if (directionalIntent != "down") {
+							directionalIntent = "down"
+						}
+					} else if (playerDirection < 45 || playerDirection > 315) {
+						if (directionalIntent != "right") {
+							directionalIntent = "right"
+						}
+					} else if (playerDirection < 225 || playerDirection > 135) {
+						if (directionalIntent != "left") {
+							directionalIntent = "left"
+						}
+					}
+				}
+			} else {
+				if (alarm_get(3) <= 0) {
+					canGiveFlow = true
+					alarm_set(3, room_speed * 60);
+				} else {
+					if (point_distance(spawnX, spawnY, oPlayer.x, oPlayer.y) > 320 && !hasBeenReplaced) {
+						instance_create(spawnX, spawnY, oEnemy);
+						hasBeenReplaced = true;
+					}
 				}
 			}
 		}

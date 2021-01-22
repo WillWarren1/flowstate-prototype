@@ -3,3 +3,5 @@
 
 
 enemyList = ds_list_create()
+
+flyingEnemyList = ds_list_create()
