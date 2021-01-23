@@ -17,7 +17,7 @@ if (distance_to_object(oPlayer) <= 35 && !isActive) {
 
 
 if (shouldSpawn && isActive && !isRespawning) {
-	alarm_set(0, room_speed * 3);
+	alarm_set(0, room_speed * 1.75);
 	shouldSpawn = false;
 	isRespawning = true;
 }
