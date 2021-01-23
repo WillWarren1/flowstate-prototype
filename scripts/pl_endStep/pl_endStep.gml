@@ -7,11 +7,19 @@ function pl_endStep() {
 	//run code based on players current state
 	switch(currentState){
 	    case states.normal:
-	        pl_normalState();
+			if (player != 1) {
+				pl_normalState();
+			} else {
+				fe_normalState();
+			}
 	    break;
     
 	    case states.attack:
-	        pl_attackState();
+			if (player != 1) {
+				pl_attackState();
+			} else {
+				fe_attackState();
+			}
 	    break;
     
 	    case states.dash:
@@ -44,6 +52,9 @@ function pl_endStep() {
 			}
 		} else {
 			god.shakeForce = 1
+		}
+		if (player == 1) {
+			gSpeed = .85 * gSpeedDefault
 		}
 	    god.shake  = true;
 	    god.freeze = true;

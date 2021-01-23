@@ -1,10 +1,12 @@
 script_execute(pl_create,0,0,0,0,0);
-
+gSpeed = 0;
+hp = 650
 canDash = true;
+airDash = true;
 playerWithinSight = false;
 playerInstanceDistance = 500;
-weapon = weapons.axe;
-player = -1;
+weapon = weapons.dagger;
+player = 1;
 directionalIntent = "";
 actionIntent = "";
 
@@ -17,3 +19,6 @@ canGiveFlow = false;
 spawnX = x;
 spawnY = y;
 hasBeenReplaced = false;
+
+searchingForPlayer = false;
+givingUpSearch = true;

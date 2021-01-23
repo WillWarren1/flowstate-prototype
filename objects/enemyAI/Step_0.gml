@@ -22,7 +22,7 @@ if (ds_list_size(enemyList) > 0) {
 					if (actionIntent != "attack") {
 						if (alarm_get(0) <= 0) {       
 							alarm_set(0, room_speed * .5)
-						}
+						} 
 					}
 					 if (playerInstanceDistance > 15 && (currentState != states.dash || alarm_get(2) <= 0)) {
 						if (playerDirection >= 45 && playerDirection <= 135) {
@@ -67,37 +67,83 @@ if (ds_list_size(flyingEnemyList) > 0) {
 		var thisFlyEnemy = ds_list_find_value(flyingEnemyList, index);
 		with(thisFlyEnemy) {
 			if (hp >= 0) {
-				if (playerWithinSight) {
-					var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
-					if (playerDirection >= 45 && playerDirection <= 135) {
-						if (directionalIntent != "up") {
-							directionalIntent = "up"
+				if (onGround) {
+					directionalIntent = "up";
+					actionIntent = "jump"
+				} else if (instance_exists(oPlayer) &&
+					actionIntent != "dash" &&
+					instance_nearest(x, y, oPlayer).currentState == states.attack &&
+					distance_to_object(oPlayer) <= 60) {
+						if (alarm_get(2) <= 0) { 
+							alarm_set(2, room_speed * .2);
 						}
-					} else if (playerDirection <= 315 && playerDirection >= 225) {
-						if (directionalIntent != "down") {
-							directionalIntent = "down"
+				} else if (playerWithinSight &&
+						instance_exists(oPlayer) &&
+						instance_nearest(x, y, oPlayer).currentState != states.dead &&
+						distance_to_object(oPlayer) <= 50) {
+						searchingForPlayer = true;
+						var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
+						if (actionIntent != "attack") {
+							if (alarm_get(0) <= 0) {       
+								alarm_set(0, room_speed * .75)
+							} 
 						}
-					} else if (playerDirection < 45 || playerDirection > 315) {
-						if (directionalIntent != "right") {
-							directionalIntent = "right"
-						}
-					} else if (playerDirection < 225 || playerDirection > 135) {
-						if (directionalIntent != "left") {
-							directionalIntent = "left"
+						if (playerInstanceDistance > 15 && (currentState != states.dash || alarm_get(2) <= 0)) {
+							if (playerDirection >= 45 && playerDirection <= 135) {
+								if (directionalIntent != "up") {
+									directionalIntent = "up"
+								}
+							} else if (playerDirection <= 315 && playerDirection >= 225) {
+								if (directionalIntent != "down") {
+									directionalIntent = instance_nearest(x, y, oPlayer).currentState == states.tumble ? "up" : "down"
+								}
+							} else if (playerDirection < 45 || playerDirection > 315) {
+								if (directionalIntent != "right") {
+									directionalIntent = instance_nearest(x, y, oPlayer).currentState == states.tumble ? "left" : "right"
+								} 
+							} else if (playerDirection < 225 || playerDirection > 135) {
+								if (directionalIntent != "left") {
+									directionalIntent = instance_nearest(x, y, oPlayer).currentState == states.tumble ? "right" : "left"
+								}
+							}
 						}
 					}
-				}
-			} else {
-				if (alarm_get(3) <= 0) {
-					canGiveFlow = true
-					alarm_set(3, room_speed * 60);
+					if (!playerWithinSight && searchingForPlayer) {
+						var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
+						if (currentState != states.dash || alarm_get(2) <= 0) {
+							if (playerDirection >= 45 && playerDirection <= 135) {
+								if (directionalIntent != "up") {
+									directionalIntent = "up"
+								}
+							} else if (playerDirection <= 315 && playerDirection >= 225) {
+								if (directionalIntent != "down") {
+									directionalIntent = "down"
+								}
+							} else if (playerDirection < 45 || playerDirection > 315) {
+								if (directionalIntent != "right") {
+									directionalIntent = "right"
+								}
+							} else if (playerDirection < 225 || playerDirection > 135) {
+								if (directionalIntent != "left") {
+									directionalIntent = "left"
+								}
+							}
+						}
+						if (!givingUpSearch) {
+							alarm_set(4, room_speed * 3)
+						}
+					}
 				} else {
-					if (point_distance(spawnX, spawnY, oPlayer.x, oPlayer.y) > 320 && !hasBeenReplaced) {
-						instance_create(spawnX, spawnY, oEnemy);
-						hasBeenReplaced = true;
+					if (alarm_get(3) <= 0) {
+						canGiveFlow = true
+						alarm_set(3, room_speed * 60);
+					} else {
+						if (point_distance(spawnX, spawnY, oPlayer.x, oPlayer.y) > 320 && !hasBeenReplaced) {
+							instance_create(spawnX, spawnY, oFlyingEnemy);
+							hasBeenReplaced = true;
+						}
 					}
 				}
-			}
 		}
 	}
 }
