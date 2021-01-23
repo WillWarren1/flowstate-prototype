@@ -35,7 +35,13 @@ function pl_endStep() {
 	    squash_stretch(1.5,1.5);
 	    weaponSprite = sprEmpty;  
 		if (player == 0) {
-			god.shakeForce = 1.35
+			if (hp <= 0) {
+				god.shouldRespawnPlayer = true;
+				god.shakeForce = 2;
+				//god.gameSpeed = .75;
+			} else {
+				god.shakeForce = 1.35
+			}
 		} else {
 			god.shakeForce = 1
 		}

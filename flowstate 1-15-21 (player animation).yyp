@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sprBlocker","path":"sprites/sprBlocker/sprBlocker.yy",},"order":0,},
+    {"id":{"name":"oSpawnCheckpoint","path":"objects/oSpawnCheckpoint/oSpawnCheckpoint.yy",},"order":8,},
     {"id":{"name":"test2","path":"rooms/test2/test2.yy",},"order":1,},
     {"id":{"name":"sprJumpthru","path":"sprites/sprJumpthru/sprJumpthru.yy",},"order":1,},
     {"id":{"name":"sprPlayer_Idle_Base","path":"sprites/sprPlayer_Idle_Base/sprPlayer_Idle_Base.yy",},"order":0,},
