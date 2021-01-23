@@ -59,8 +59,8 @@ function pl_endStep() {
 	    god.shake  = true;
 	    god.freeze = true;
 	    y --;
-	    xSpeed = hitBy.xHit;
-	    ySpeed = hitBy.yHit;
+	    xSpeed = player == 1 ? .7 * hitBy.xHit : hitBy.xHit;
+	    ySpeed = player == 1 ? .7 * hitBy.yHit : hitBy.yHit;
 	    facing = hitBy.owner.facing * -1;
 	    depth  = hitBy.depth;
 	    hitStun = hitBy.hitStun;

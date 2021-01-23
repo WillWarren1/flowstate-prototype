@@ -3,6 +3,9 @@ function pl_tumbleState() {
 	if(onGround){
 	    xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
 	}else{
+		if (player == 1) {
+			ySpeed = approach(ySpeed,0,0.05 * god.gameSpeed);
+		}
 	    xSpeed = approach(xSpeed,0,0.01 * god.gameSpeed);
 	}
 

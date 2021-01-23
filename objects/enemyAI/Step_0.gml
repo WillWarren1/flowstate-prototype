@@ -67,10 +67,7 @@ if (ds_list_size(flyingEnemyList) > 0) {
 		var thisFlyEnemy = ds_list_find_value(flyingEnemyList, index);
 		with(thisFlyEnemy) {
 			if (hp >= 0) {
-				if (onGround) {
-					directionalIntent = "up";
-					actionIntent = "jump"
-				} else if (instance_exists(oPlayer) &&
+				if (instance_exists(oPlayer) &&
 					actionIntent != "dash" &&
 					instance_nearest(x, y, oPlayer).currentState == states.attack &&
 					distance_to_object(oPlayer) <= 60) {
@@ -109,7 +106,7 @@ if (ds_list_size(flyingEnemyList) > 0) {
 						}
 					}
 					if (!playerWithinSight && searchingForPlayer) {
-						var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
+						var playerDirection = point_direction(x, y, instance_nearest(x, y, oPlayer).x, instance_nearest(x, y, oPlayer).y);
 						if (currentState != states.dash || alarm_get(2) <= 0) {
 							if (playerDirection >= 45 && playerDirection <= 135) {
 								if (directionalIntent != "up") {

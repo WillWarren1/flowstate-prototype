@@ -17,7 +17,7 @@ function fe_normalState(){
 	} else if (up) {
 	    ySpeed = approach(ySpeed,-mSpeed,aSpeed * god.gameSpeed);
 	} else if (down) {
-		ySpeed = approach(1.15*ySpeed,mSpeed,aSpeed * god.gameSpeed);
+		ySpeed = approach(1.08*ySpeed,mSpeed,aSpeed * god.gameSpeed);
 	}
 	
 	//attack
