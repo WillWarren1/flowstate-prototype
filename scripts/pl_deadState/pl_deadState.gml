@@ -7,4 +7,8 @@ function pl_deadState(){
 	}else{
 	    xSpeed = approach(xSpeed,0,0.01 * god.gameSpeed);
 	}
+	
+	if (player == 1) {
+		ySpeed += gSpeed * god.gameSpeed;
+	}
 }

@@ -47,7 +47,7 @@ function pl_create() {
 	aSpeedDefault = aSpeed;
 	cSpeed = 1;
 	tSpeed = 20;
-	jPower = -3;
+	jPower = -3.55;
 	facing = 1;
 
 	gSpeedDefault = gSpeed;

@@ -81,7 +81,7 @@ function pl_endStep() {
 		}
 	    hit = false;
 	}
-	if (flow >= 3) {
+	if (flow >= 2.75) {
 		superJump = true;
 	}
 

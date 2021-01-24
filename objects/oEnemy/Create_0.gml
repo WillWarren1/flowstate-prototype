@@ -17,3 +17,6 @@ canGiveFlow = false;
 spawnX = x;
 spawnY = y;
 hasBeenReplaced = false;
+
+searchingForPlayer = false;
+givingUpSearch = true;

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 spawnedPlayer = instance_nearest(x,y,oPlayer);
+previousPlayer = spawnedPlayer;
 shouldSpawn = instance_number(oPlayer) == 0
 isActive = false;
 if (shouldSpawn && isActive) {
