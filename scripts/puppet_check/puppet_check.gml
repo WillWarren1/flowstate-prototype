@@ -9,18 +9,43 @@
 function puppet_check(argument0){
 
 	if (self.player == 0) {
+		var leftkey = keyboard_check(vk_left);
+		var rightkey =  keyboard_check(vk_right);
+		var upkey = keyboard_check(vk_up);
+		var downkey = keyboard_check(vk_down);
+		var jumpkey = keyboard_check(ord("Q"));
+		var attackkey = keyboard_check(ord("W"));
+		var dashkey = keyboard_check(ord("E"));
+		var itemkey = keyboard_check(ord("R"));
+		
+		var i;
+		for (i = 0; i < array_length_1d(global.gp); i ++) {
+			if (global.gp[i] == true) {
+				gamepad_set_axis_deadzone(i, .4)
+				var _gpMap = gamepad_get_mapping(global.gp[i]);
+				show_debug_message("Gamepad Mapping = " + _gpMap);
+				leftkey = gamepad_button_check(i, gp_padl) || gamepad_axis_value(i, gp_axislh) < 0
+				rightkey = gamepad_button_check(i, gp_padr) || gamepad_axis_value(i, gp_axislh) > 0
+				upkey = gamepad_button_check(i, gp_padu) || gamepad_axis_value(i, gp_axislv) < 0
+				downkey = gamepad_button_check(i, gp_padd) || gamepad_axis_value(i, gp_axislv) > 0
+				jumpkey = gamepad_button_check_pressed(i, gp_face1)
+				attackkey = gamepad_button_check_pressed(i, gp_face3)
+				dashkey = gamepad_button_check_pressed(i, gp_face2)
+				itemkey = gamepad_button_check_pressed(i, gp_face4)
+			}
+		}
 		switch(argument0) {
 			case "left":
-				return keyboard_check(vk_left)
+				return leftkey
 			break;
 			case "right":
-				return keyboard_check(vk_right)
+				return rightkey
 			break;
 			case "up":
-				return keyboard_check(vk_up)
+				return upkey
 			break;
 			case "down":
-				return keyboard_check(vk_down)
+				return downkey
 			break;
 			case "jump":
 				return keyboard_check(ord("Q"))

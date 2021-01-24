@@ -77,7 +77,7 @@ function pl_endStep() {
 		if (flow > 1){
 			flow = 1
 		} else if (flow <= 1) {
-			flow = 0.75
+			flow = 0.85
 		}
 	    hit = false;
 	}
