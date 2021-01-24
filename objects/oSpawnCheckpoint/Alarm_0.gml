@@ -10,7 +10,7 @@ god.gameSpeed = 1
 god.shouldRespawnPlayer = false;
 spawnedPlayer = instance_create_layer(x, y, "Creatures", oPlayer);
 with(previousPlayer) {
-	image_alpha = 0;
+	visible = false;
 	alarm_set(1, room_speed * .5);
 }
 previousPlayer = spawnedPlayer
