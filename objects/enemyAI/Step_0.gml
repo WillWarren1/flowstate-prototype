@@ -21,8 +21,9 @@ if (ds_list_size(enemyList) > 0) {
 					searchingForPlayer = true;
 					var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
 					if (actionIntent != "attack") {
-						if (alarm_get(0) <= 0) {       
-							alarm_set(0, room_speed * .5)
+						if (alarm_get(0) <= 0) {
+							var attackBuildUp = random_range(.26, .35); 
+							alarm_set(0, room_speed * attackBuildUp)
 						} 
 					}
 					 if (playerInstanceDistance > 15 && (currentState != states.dash || alarm_get(2) <= 0)) {

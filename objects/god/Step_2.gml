@@ -27,4 +27,12 @@ if(freeze){
         freeze = false;
     }
 }
-
+var numOfPlayers = instance_number(oPlayer)
+if (numOfPlayers > 1) {
+	var i;
+	for(i=0; i < numOfPlayers; i++) {
+		if (instance_find(oPlayer, i).currentState == states.dead) {
+			instance_find(oPlayer, i).destroy = true;
+		}
+	}
+}

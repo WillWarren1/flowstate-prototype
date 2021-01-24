@@ -7,7 +7,7 @@ function pl_create() {
 	landed = 0;
 
 	player = 0;
-
+	instanceIsInvincible = false;
 	//buttons
 	up    = false;
 	down  = false;

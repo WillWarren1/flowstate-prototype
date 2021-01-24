@@ -9,31 +9,18 @@
 function puppet_check(argument0){
 
 	if (self.player == 0) {
-		var leftkey = keyboard_check(vk_left);
-		var rightkey =  keyboard_check(vk_right);
-		var upkey = keyboard_check(vk_up);
-		var downkey = keyboard_check(vk_down);
-		var jumpkey = keyboard_check(ord("Q"));
-		var attackkey = keyboard_check(ord("W"));
-		var dashkey = keyboard_check(ord("E"));
-		var itemkey = keyboard_check(ord("R"));
+		//find active controller port
+		var activeIndex = get_controller_port(self.flow > 2 ? .7 : .4);
+
+		var leftkey = keyboard_check(vk_left) || gamepad_button_check(activeIndex, gp_padl) || gamepad_axis_value(activeIndex, gp_axislh) < 0;
+		var rightkey =  keyboard_check(vk_right) || gamepad_button_check(activeIndex, gp_padr) || gamepad_axis_value(activeIndex, gp_axislh) > 0;
+		var upkey = keyboard_check(vk_up) || gamepad_button_check(activeIndex, gp_padu) || gamepad_axis_value(activeIndex, gp_axislv) < 0;
+		var downkey = keyboard_check(vk_down) ||  gamepad_button_check(activeIndex, gp_padd) || gamepad_axis_value(activeIndex, gp_axislv) > 0;
+		var jumpkey = keyboard_check(ord("Q")) || gamepad_button_check(activeIndex, gp_face1);
+		var attackkey = keyboard_check(ord("W")) || gamepad_button_check_pressed(activeIndex, gp_face3);
+		var dashkey = keyboard_check(ord("E")) || gamepad_button_check_pressed(activeIndex, gp_face2);
+		var itemkey = keyboard_check(ord("R")) || gamepad_button_check_pressed(activeIndex, gp_face4);
 		
-		var i;
-		for (i = 0; i < array_length_1d(global.gp); i ++) {
-			if (global.gp[i] == true) {
-				gamepad_set_axis_deadzone(i, .4)
-				var _gpMap = gamepad_get_mapping(global.gp[i]);
-				show_debug_message("Gamepad Mapping = " + _gpMap);
-				leftkey = gamepad_button_check(i, gp_padl) || gamepad_axis_value(i, gp_axislh) < 0
-				rightkey = gamepad_button_check(i, gp_padr) || gamepad_axis_value(i, gp_axislh) > 0
-				upkey = gamepad_button_check(i, gp_padu) || gamepad_axis_value(i, gp_axislv) < 0
-				downkey = gamepad_button_check(i, gp_padd) || gamepad_axis_value(i, gp_axislv) > 0
-				jumpkey = gamepad_button_check_pressed(i, gp_face1)
-				attackkey = gamepad_button_check_pressed(i, gp_face3)
-				dashkey = gamepad_button_check_pressed(i, gp_face2)
-				itemkey = gamepad_button_check_pressed(i, gp_face4)
-			}
-		}
 		switch(argument0) {
 			case "left":
 				return leftkey
@@ -48,16 +35,16 @@ function puppet_check(argument0){
 				return downkey
 			break;
 			case "jump":
-				return keyboard_check(ord("Q"))
+				return jumpkey
 			break;
 			case "attack":
-				return keyboard_check(ord("W"))
+				return attackkey
 			break;
 			case "dash":
-				return keyboard_check(ord("E"))
+				return dashkey
 			break;
 			case "item":
-				return keyboard_check(ord("R"))
+				return itemkey
 			break;
 		}
 	} else {

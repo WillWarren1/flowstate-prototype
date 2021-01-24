@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "boxes",
-    "path": "folders/Objects/oFlyingEnemy/boxes.yy",
+    "path": "folders/Objects/FlyingEnemy/boxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "oFlyEnemyHurtbox",

@@ -39,14 +39,14 @@ function pl_endStep() {
 	}
 
 	//hit
-	if(hit){
+	 //
+	if(hit && !instanceIsInvincible){
 	    squash_stretch(1.5,1.5);
 	    weaponSprite = sprEmpty;  
 		if (player == 0) {
 			if (hp <= 0) {
 				god.shouldRespawnPlayer = true;
 				god.shakeForce = 2;
-				//god.gameSpeed = .75;
 			} else {
 				god.shakeForce = 1.35
 			}
@@ -59,11 +59,17 @@ function pl_endStep() {
 	    god.shake  = true;
 	    god.freeze = true;
 	    y --;
-	    xSpeed = player == 1 ? .7 * hitBy.xHit : hitBy.xHit;
-	    ySpeed = player == 1 ? .7 * hitBy.yHit : hitBy.yHit;
-	    facing = hitBy.owner.facing * -1;
-	    depth  = hitBy.depth;
-	    hitStun = hitBy.hitStun;
+		if (instance_exists(hitBy)) {
+		    xSpeed = player == 1 ? .7 * hitBy.xHit : hitBy.xHit;
+		    ySpeed = player == 1 ? .7 * hitBy.yHit : hitBy.yHit;
+		    facing = hitBy.owner.facing * -1;
+		    depth  = hitBy.depth;
+		    hitStun = hitBy.hitStun;
+		} else {
+			xSpeed = 0;
+		    ySpeed = 0;
+		    hitStun = 65
+		}
 		if(hp <= 0){
 			if (canGiveFlow) {
 				hitBy.owner.flow += .25	

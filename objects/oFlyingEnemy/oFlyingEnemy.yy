@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "oFlyingEnemy",
-    "path": "folders/Objects/oFlyingEnemy.yy",
+    "name": "FlyingEnemy",
+    "path": "folders/Objects/FlyingEnemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "oFlyingEnemy",

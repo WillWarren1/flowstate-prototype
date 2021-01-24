@@ -4,16 +4,9 @@
 ////////////////////////////////////////////////////////////////////////////
 
 ///		Place inputs here		///
-var i;
-var activeIndex;
-for (i = 0; i < array_length_1d(global.gp); i ++) {
-	if (global.gp[i] == true) {
-		gamepad_set_axis_deadzone(i, .7)
-		activeIndex = i;
-	}
-}
-var kPause		= keyboard_check_pressed( ord("P")||  gamepad_button_check(activeIndex, gp_start) );
-var kDown		= (mouse_wheel_down() || keyboard_check_pressed( vk_down ) || gamepad_button_check_pressed(activeIndex, gp_padd) || gamepad_axis_value(activeIndex, gp_axislv) == 0);
+var activeIndex = get_controller_port(.4);
+var kPause		= keyboard_check_pressed( ord("P")) ||  gamepad_button_check_pressed(activeIndex, gp_start);
+var kDown		= (mouse_wheel_down() || keyboard_check_pressed( vk_down ) || gamepad_button_check_pressed(activeIndex, gp_padd) || gamepad_axis_value(activeIndex, gp_axislv) > 0);
 var kUp			= (mouse_wheel_up() || keyboard_check_pressed( vk_up ) ||  gamepad_button_check_pressed(activeIndex, gp_padu) || gamepad_axis_value(activeIndex, gp_axislv) < 0 );
 var kConfirm	= (mouse_check_button_pressed( mb_left ) || keyboard_check_pressed( vk_enter) || gamepad_button_check_pressed(activeIndex, gp_face1) );
 

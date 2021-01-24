@@ -21,7 +21,7 @@ function hit_check() {
 	                    }
 	                    //if it is NOT on the ignore list, hit it, and add it to
 	                    //the ignore list
-	                    if(!ignore){
+	                    if(!ignore && !other.owner.instanceIsInvincible){
 	                        other.owner.hit = true;
 	                        other.owner.hitBy = id;
 							other.owner.hp -= damage;
