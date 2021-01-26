@@ -20,9 +20,9 @@ if (ds_list_size(enemyList) > 0) {
 				} else if (playerWithinSight && instance_exists(oPlayer) && instance_nearest(x, y, oPlayer).currentState != states.dead) {
 					searchingForPlayer = true;
 					var playerDirection = point_direction(x, y, oPlayer.x, oPlayer.y);
-					if (actionIntent != "attack") {
+					if (actionIntent != "attack") { 
 						if (alarm_get(0) <= 0) {
-							var attackBuildUp = random_range(.26, .35); 
+							var attackBuildUp = instance_nearest(x, y, oPlayer).currentState == states.tumble ? .45 : random_range(.26, .35); 
 							alarm_set(0, room_speed * attackBuildUp)
 						} 
 					}
