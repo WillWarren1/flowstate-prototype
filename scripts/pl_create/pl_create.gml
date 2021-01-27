@@ -26,9 +26,12 @@ function pl_create() {
 	attack = false;
 	attackHold = false;
 
+	footstepCounter = 10;
 	dash = false;
 	dashHold = false;
-
+	
+	justDied = false;
+	
 	item = false;
 	itemHold = false;
 

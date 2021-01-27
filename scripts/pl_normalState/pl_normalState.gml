@@ -21,6 +21,7 @@ function pl_normalState() {
 	if(onGround){ 
 		numOfAirJumps = 1
 	    if(jump && !jumpHold){
+			audio_play_sound(jumpSound, 5, false);
 			var jumpFlow = 1 > (flow*.4) ? 1 : (flow*.4)
 			if (jumpFlow > 1.5) {
 				jumpFlow = 1.5
@@ -30,6 +31,7 @@ function pl_normalState() {
 	    }
 	} else {
 		if(jump && !jumpHold && numOfAirJumps > 0) {
+			audio_play_sound(doubleJump, 5, false);
 			var jumpFlow = 1 > (flow*.5) ? 1 : (flow*.5)
 			if (jumpFlow > 1.3) {
 				jumpFlow = 1.3
