@@ -85,6 +85,7 @@
     {"id":{"name":"pl_recoveryState","path":"scripts/pl_recoveryState/pl_recoveryState.yy",},"order":5,},
     {"id":{"name":"pl_tumbleState","path":"scripts/pl_tumbleState/pl_tumbleState.yy",},"order":6,},
     {"id":{"name":"pl_create","path":"scripts/pl_create/pl_create.yy",},"order":0,},
+    {"id":{"name":"sprFlowCrown","path":"sprites/sprFlowCrown/sprFlowCrown.yy",},"order":5,},
     {"id":{"name":"sfont_jasontomlee","path":"sprites/sfont_jasontomlee/sfont_jasontomlee.yy",},"order":4,},
     {"id":{"name":"puppet_check","path":"scripts/puppet_check/puppet_check.yy",},"order":2,},
     {"id":{"name":"pl_beginStep","path":"scripts/pl_beginStep/pl_beginStep.yy",},"order":1,},
@@ -169,10 +170,10 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"test2","path":"rooms/test2/test2.yy",},},
     {"roomId":{"name":"mixedTestRoom","path":"rooms/mixedTestRoom/mixedTestRoom.yy",},},
     {"roomId":{"name":"tesflyTest","path":"rooms/tesflyTest/tesflyTest.yy",},},
     {"roomId":{"name":"test1","path":"rooms/test1/test1.yy",},},
-    {"roomId":{"name":"test2","path":"rooms/test2/test2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

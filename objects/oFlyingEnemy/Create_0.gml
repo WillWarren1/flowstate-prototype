@@ -22,3 +22,6 @@ hasBeenReplaced = false;
 
 searchingForPlayer = false;
 givingUpSearch = true;
+playerIsTooHigh = false;
+whatTheFuckDebug = false;
+playerDirection = -1;
