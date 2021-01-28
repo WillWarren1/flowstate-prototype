@@ -9,7 +9,7 @@ function check_below() {
 	//          AND
 	//      b. there is not an parentJumpthru inside it
 
-	return place_meeting( x, y+1, parentBlocker ) 
+	return place_meeting( x, y+1, parentBlocker ) && position_meeting(x, y+5, parentBlocker)
 	    || (place_meeting( x, y+1, parentJumpthru ) && !place_meeting( x, y, parentJumpthru ) && sign(ySpeed) != -1);
 
 

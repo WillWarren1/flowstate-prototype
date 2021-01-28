@@ -71,7 +71,7 @@ if (ds_list_size(enemyList) > 0) {
 					canGiveFlow = true
 					alarm_set(3, room_speed * 60);
 				} else {
-					if (point_distance(spawnX, spawnY, oPlayer.x, oPlayer.y) > 320 && !hasBeenReplaced) {
+					if (point_distance(spawnX, spawnY, oPlayer.x, oPlayer.y) > 480 && !hasBeenReplaced) {
 						instance_create(spawnX, spawnY, oEnemy);
 						hasBeenReplaced = true;
 					}

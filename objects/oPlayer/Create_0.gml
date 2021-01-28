@@ -6,3 +6,5 @@ canGiveFlow = false;
 spawnX = x;
 spawnY = y;
 
+	//hit and hurtboxes
+	hbox_init();

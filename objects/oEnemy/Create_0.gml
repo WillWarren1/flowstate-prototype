@@ -23,3 +23,6 @@ givingUpSearch = true;
 playerIsTooHigh = false;
 whatTheFuckDebug = false;
 playerDirection = -1;
+
+	//hit and hurtboxes
+	hbox_init();

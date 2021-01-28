@@ -62,8 +62,6 @@ function pl_create() {
 	airDash = false;
 
 	//fighting
-	//hit and hurtboxes
-	hbox_init();
 
 	hpMax = 1000;
 	hp    = hpMax;

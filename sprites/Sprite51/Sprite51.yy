@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b5604f24-27a3-4974-a6b2-f044dcb0de58","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "flowstate 1-15-21 (player animation)",
-    "path": "flowstate 1-15-21 (player animation).yyp",
+    "name": "FlowState_1-27-21",
+    "path": "FlowState_1-27-21.yyp",
   },
   "resourceVersion": "1.0",
   "name": "Sprite51",

@@ -30,7 +30,7 @@ function pl_animation() {
 	                if(down){
 	                    //crouch
 	                    animation_set(fd_pl_idle,weaponRecover); //sprPlayer_Recovery_Base was here
-	                    weaponSprite = player == 0 ? weaponRecover : sprEmpty;
+	                    weaponSprite = weaponRecover;
 	                }else{
 	                    //body
 	                    animation_set(fd_pl_idle,idleSprite);
@@ -115,7 +115,7 @@ function pl_animation() {
 	        //draw hit sprite during hit stop
 	        if(god.freeze){
 	            animation_set(fd_pl_tumble,sprPlayer_Hit_Base); //sprPlayer_Hit_Base was here
-	            weaponSprite = player == 0 ? sprDinoHurt : sprEmpty;                
+	            weaponSprite = player == 0 ? sprDinoHurt : sprEmpty;      
 	        }else{
 	            //laying down on the ground after being hit
 	            if(onGround){
