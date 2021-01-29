@@ -45,6 +45,7 @@
     {"id":{"name":"dashSound","path":"sounds/dashSound/dashSound.yy",},"order":8,},
     {"id":{"name":"landing","path":"sounds/landing/landing.yy",},"order":4,},
     {"id":{"name":"sprDagger_Attack_Up_G","path":"sprites/sprDagger_Attack_Up_G/sprDagger_Attack_Up_G.yy",},"order":5,},
+    {"id":{"name":"sprHealthFlowMeters","path":"sprites/sprHealthFlowMeters/sprHealthFlowMeters.yy",},"order":8,},
     {"id":{"name":"sprDagger_Attack_Up_A","path":"sprites/sprDagger_Attack_Up_A/sprDagger_Attack_Up_A.yy",},"order":6,},
     {"id":{"name":"sprDagger_Attack_Down_G","path":"sprites/sprDagger_Attack_Down_G/sprDagger_Attack_Down_G.yy",},"order":7,},
     {"id":{"name":"sprDagger_Attack_Down_A","path":"sprites/sprDagger_Attack_Down_A/sprDagger_Attack_Down_A.yy",},"order":8,},
@@ -179,7 +180,6 @@
     {"id":{"name":"fe_normalState","path":"scripts/fe_normalState/fe_normalState.yy",},"order":0,},
     {"id":{"name":"notes","path":"notes/notes/notes.yy",},"order":0,},
     {"id":{"name":"moody_synth_gart","path":"sounds/moody_synth_gart/moody_synth_gart.yy",},"order":9,},
-    {"id":{"name":"sprHealthFlowMeters","path":"sprites/sprHealthFlowMeters/sprHealthFlowMeters.yy",},"order":8,},
     {"id":{"name":"compatibility_report_261217_820362036","path":"notes/compatibility_report_261217_820362036/compatibility_report_261217_820362036.yy",},"order":1,},
   ],
   "Options": [
