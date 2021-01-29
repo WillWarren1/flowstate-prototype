@@ -179,6 +179,7 @@
     {"id":{"name":"fe_normalState","path":"scripts/fe_normalState/fe_normalState.yy",},"order":0,},
     {"id":{"name":"notes","path":"notes/notes/notes.yy",},"order":0,},
     {"id":{"name":"moody_synth_gart","path":"sounds/moody_synth_gart/moody_synth_gart.yy",},"order":9,},
+    {"id":{"name":"sprHealthFlowMeters","path":"sprites/sprHealthFlowMeters/sprHealthFlowMeters.yy",},"order":8,},
     {"id":{"name":"compatibility_report_261217_820362036","path":"notes/compatibility_report_261217_820362036/compatibility_report_261217_820362036.yy",},"order":1,},
   ],
   "Options": [
