@@ -47,6 +47,7 @@
     {"id":{"name":"sprDagger_Attack_Up_G","path":"sprites/sprDagger_Attack_Up_G/sprDagger_Attack_Up_G.yy",},"order":5,},
     {"id":{"name":"sprHealthFlowMeters","path":"sprites/sprHealthFlowMeters/sprHealthFlowMeters.yy",},"order":8,},
     {"id":{"name":"sprDagger_Attack_Up_A","path":"sprites/sprDagger_Attack_Up_A/sprDagger_Attack_Up_A.yy",},"order":6,},
+    {"id":{"name":"sprGUIFuckGMS2","path":"sprites/sprGUIFuckGMS2/sprGUIFuckGMS2.yy",},"order":9,},
     {"id":{"name":"sprDagger_Attack_Down_G","path":"sprites/sprDagger_Attack_Down_G/sprDagger_Attack_Down_G.yy",},"order":7,},
     {"id":{"name":"sprDagger_Attack_Down_A","path":"sprites/sprDagger_Attack_Down_A/sprDagger_Attack_Down_A.yy",},"order":8,},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":1,},
