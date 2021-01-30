@@ -16,8 +16,8 @@ gpu_set_tex_filter( false );
 #region  General	
 /////////////////////////////////////////////////////////////////
 
-//font	= font_add_sprite( sfont_jasontomlee, ord(" "), 1, 1);
-//draw_set_font( font );
+font	= font_add_sprite( sfont_jasontomlee, ord(" "), 1, 1);
+draw_set_font( font );
 
 pause		= false;
 gwidth		= display_get_gui_width();

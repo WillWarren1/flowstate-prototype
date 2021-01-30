@@ -31,6 +31,7 @@ repeat(abs(h)) {
         x += sign(h) * god.gameSpeed;
     }else{
         x_collide();
+		x-=sign(h);
         break;
     }
 }

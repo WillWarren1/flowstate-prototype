@@ -7,9 +7,9 @@ function pl_draw() {
 	//weapon
 	draw_sprite_ext(weaponSprite,currentFrame,xPos,yPos,xScale * facing,yScale,angle,c_white,1);
 
-	if (flow > 1.5) {
-		draw_sprite(sprFlowCrown, -1, x-12, y-40)
-	}
+	//if (flow > 1.5) {
+	//	draw_sprite(sprFlowCrown, -1, x-12, y-40)
+	//}
 
 
 }
