@@ -210,9 +210,9 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_509C6E6C","path":"rooms/level1/level1.yy",},
     {"name":"inst_5EDFE56B","path":"rooms/level1/level1.yy",},
     {"name":"inst_3F331740","path":"rooms/level1/level1.yy",},
-    {"name":"inst_509C6E6C","path":"rooms/level1/level1.yy",},
     {"name":"inst_10EC7E0E","path":"rooms/level1/level1.yy",},
     {"name":"inst_2A42396","path":"rooms/level1/level1.yy",},
     {"name":"inst_272497E0","path":"rooms/level1/level1.yy",},

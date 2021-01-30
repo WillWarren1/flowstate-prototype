@@ -24,7 +24,7 @@ function pl_animation() {
 	switch(currentState){
 	    case states.normal:
 	        //grounded movement
-	        if(onGround){
+	        if(onGround || player == 1){
 	            //idle
 	            if(!left && !right){
 	                if(down){
