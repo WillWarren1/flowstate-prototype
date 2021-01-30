@@ -2,7 +2,13 @@
 /// on itch.io, the store page can be found here: https://ratcasket.itch.io/hitboxes-and-hurtboxes
 
 draw_set_color(c_black);
-draw_sprite(sprGUIFuckGMS2,-1,32,32);
+var flowUI = instance_nearest(x, y, oPlayer).flow < 1 ? 0 : 18 * instance_nearest(x, y, oPlayer).flow
+
+draw_sprite_stretched(sprHealthBlock, -1, 34, 46, 90 * (instance_nearest(x, y, oPlayer).hp / instance_nearest(x, y, oPlayer).hpMax), 10);
+draw_sprite_stretched(sprFlowBlock, -1, 34, 62, flowUI, 10);
+draw_sprite(sprUIFuckGMS2,-1,32,42);
+
+
 //draw_text(32,32,string_hash_to_newline("LControl: Change Weapon"));
 //draw_text(32,48,string_hash_to_newline("Q: Jump"));
 //draw_text(32,64,string_hash_to_newline("W: Attack"));
