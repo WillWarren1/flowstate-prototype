@@ -14,7 +14,7 @@
   "duration": 0.17661,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Scripts/Sounds.yy",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "landing",

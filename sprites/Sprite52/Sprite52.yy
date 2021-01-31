@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c06735e6-7cbd-4e6c-a413-8667ba3d0b4a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "FlowState_1-27-21",
-    "path": "FlowState_1-27-21.yyp",
+    "name": "flowstate-prototypethe_end_of_the_jam",
+    "path": "flowstate-prototypethe_end_of_the_jam.yyp",
   },
   "resourceVersion": "1.0",
   "name": "Sprite52",

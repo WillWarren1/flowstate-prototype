@@ -24,7 +24,7 @@ function pl_animation() {
 	switch(currentState){
 	    case states.normal:
 	        //grounded movement
-	        if(onGround || player == 1){
+	        if(onGround){
 	            //idle
 	            if(!left && !right){
 	                if(down){
@@ -64,12 +64,40 @@ function pl_animation() {
     
 	    case states.dash:
 	        animation_set(fd_pl_roll,sprPlayer_Dash_Base); //sprPlayer_Dash_Base was here
-	        weaponSprite = player == 0 ? sprDinoDash : sprEmpty;  
+	        if player = 0
+				{
+				weaponSprite = sprDinoDash
+				}
+			else
+				{
+				if player = -1
+					{
+					weaponSprite = spr_mantidDash
+					}
+				else
+					{
+					weaponSprite = spr_flyingEnemy
+					}
+				}
 	    break;
     
 	    case states.dead:
 	        animation_set(fd_pl_dead,sprPlayer_Dead_Base); //sprPlayer_Dead_Base was here
-	        weaponSprite = player == 0 ? sprDinoDead : sprEmpty;        
+	          if player = 0
+				{
+				weaponSprite = sprDinoDead
+				}
+			else
+				{
+				if player = -1
+					{
+					weaponSprite = spr_mantidDead
+					}
+				else
+					{
+					weaponSprite = spr_flyingEnemyDead
+					}
+				}        
 	    break;
     
 	    case states.attack:
@@ -108,23 +136,79 @@ function pl_animation() {
     
 	    case states.recovery:
 	        animation_set(fd_pl_recovery,sprPlayer_Recovery_Base);//sprPlayer_Recovery_Base was here
-	        weaponSprite = player == 0 ? sprDinoRecover : sprEmpty; 
+	              if player = 0
+				{
+				weaponSprite = sprDinoRecover
+				}
+			else
+				{
+				if player = -1
+					{
+					weaponSprite = spr_mantidCrouch
+					}
+				else
+					{
+					weaponSprite = spr_flyingEnemy
+					}
+				}     
 	    break;
     
 	    case states.tumble:
 	        //draw hit sprite during hit stop
 	        if(god.freeze){
 	            animation_set(fd_pl_tumble,sprPlayer_Hit_Base); //sprPlayer_Hit_Base was here
-	            weaponSprite = player == 0 ? sprDinoHurt : sprEmpty;      
+	              if player = 0
+				{
+				weaponSprite = sprDinoHurt
+				}
+			else
+				{
+				if player = -1
+					{
+					weaponSprite = spr_mantidHurt
+					}
+				else
+					{
+					weaponSprite = spr_flyingEnemy
+					}
+				}     
 	        }else{
 	            //laying down on the ground after being hit
 	            if(onGround){
 	                animation_set(fd_pl_tumble,sprPlayer_Dead_Base ); //sprPlayer_Dead_Base was here
-	                weaponSprite = player == 0 ? sprDinoDead : sprEmpty; 
+	                	              if player = 0
+				{
+				weaponSprite = sprDinoDead
+				}
+			else
+				{
+				if player = -1
+					{
+					weaponSprite = spr_mantidCrouch
+					}
+				else
+					{
+					weaponSprite = spr_flyingEnemy
+					}
+				}     
 	            //flying through the air after being hit      
 	            }else{
 	                animation_set(fd_pl_dead,sprPlayer_Tumble_Base); //sprPlayer_Tumble_Base was here
-	                weaponSprite = player == 0 ? sprDinoTumble : sprEmpty;        
+	                	              if player = 0
+				{
+				weaponSprite = sprDinoDead
+				}
+			else
+				{
+				if player = -1
+					{
+					weaponSprite = spr_mantidHurt
+					}
+				else
+					{
+					weaponSprite = spr_flyingEnemy
+					}
+				}            
 	            }
 	        }
 	    break;
