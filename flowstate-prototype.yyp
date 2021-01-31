@@ -146,6 +146,7 @@
     {"id":{"name":"Sprite53","path":"sprites/Sprite53/Sprite53.yy",},"order":4,},
     {"id":{"name":"Sprite80","path":"sprites/Sprite80/Sprite80.yy",},"order":8,},
     {"id":{"name":"Sprite82","path":"sprites/Sprite82/Sprite82.yy",},"order":9,},
+    {"id":{"name":"controlScreen","path":"rooms/controlScreen/controlScreen.yy",},"order":3,},
     {"id":{"name":"titleScreen","path":"rooms/titleScreen/titleScreen.yy",},"order":2,},
     {"id":{"name":"sprJumpthru","path":"sprites/sprJumpthru/sprJumpthru.yy",},"order":1,},
     {"id":{"name":"sprPlayer_Dash_Base","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"order":5,},
@@ -205,8 +206,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"titleScreen","path":"rooms/titleScreen/titleScreen.yy",},},
+    {"roomId":{"name":"controlScreen","path":"rooms/controlScreen/controlScreen.yy",},},
+    {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
     {"roomId":{"name":"level12","path":"rooms/level12/level12.yy",},},
   ],
   "Folders": [
@@ -238,7 +240,7 @@
     {"folderPath":"folders/Scripts/player/states.yy","order":4,"resourceVersion":"1.0","name":"states","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/player/events.yy","order":5,"resourceVersion":"1.0","name":"events","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/compatibility/view.yy","order":4,"resourceVersion":"1.0","name":"view","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sounds.yy","order":4,"resourceVersion":"1.0","name":"Sounds","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Sounds.yy","order":9,"resourceVersion":"1.0","name":"Sounds","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites.yy","order":5,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/player.yy","order":0,"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/player/axe.yy","order":1,"resourceVersion":"1.0","name":"axe","tags":[],"resourceType":"GMFolder",},

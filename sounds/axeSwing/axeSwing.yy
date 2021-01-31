@@ -14,7 +14,7 @@
   "duration": 0.150102,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Scripts/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "axeSwing",

@@ -14,7 +14,7 @@
   "duration": 115.231125,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Scripts/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "moody_synth_gart",

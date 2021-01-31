@@ -14,7 +14,7 @@
   "duration": 1.195091,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Scripts/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "respawnSound",
