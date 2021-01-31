@@ -80,6 +80,7 @@
     {"id":{"name":"x_collide","path":"scripts/x_collide/x_collide.yy",},"order":1,},
     {"id":{"name":"y_collide","path":"scripts/y_collide/y_collide.yy",},"order":2,},
     {"id":{"name":"__global_object_depths","path":"scripts/__global_object_depths/__global_object_depths.yy",},"order":2,},
+    {"id":{"name":"oTitleController","path":"objects/oTitleController/oTitleController.yy",},"order":10,},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},"order":3,},
     {"id":{"name":"__init_view","path":"scripts/__init_view/__init_view.yy",},"order":0,},
     {"id":{"name":"__view_get","path":"scripts/__view_get/__view_get.yy",},"order":1,},
@@ -145,6 +146,7 @@
     {"id":{"name":"Sprite53","path":"sprites/Sprite53/Sprite53.yy",},"order":4,},
     {"id":{"name":"Sprite80","path":"sprites/Sprite80/Sprite80.yy",},"order":8,},
     {"id":{"name":"Sprite82","path":"sprites/Sprite82/Sprite82.yy",},"order":9,},
+    {"id":{"name":"titleScreen","path":"rooms/titleScreen/titleScreen.yy",},"order":2,},
     {"id":{"name":"sprJumpthru","path":"sprites/sprJumpthru/sprJumpthru.yy",},"order":1,},
     {"id":{"name":"sprPlayer_Dash_Base","path":"sprites/sprPlayer_Dash_Base/sprPlayer_Dash_Base.yy",},"order":5,},
     {"id":{"name":"sprPlayer_Dead_Base","path":"sprites/sprPlayer_Dead_Base/sprPlayer_Dead_Base.yy",},"order":6,},
@@ -204,6 +206,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
+    {"roomId":{"name":"titleScreen","path":"rooms/titleScreen/titleScreen.yy",},},
     {"roomId":{"name":"level12","path":"rooms/level12/level12.yy",},},
   ],
   "Folders": [
