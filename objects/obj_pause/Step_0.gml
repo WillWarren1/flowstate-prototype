@@ -114,7 +114,7 @@ if ( pause ){
 				screen_alpha_set	= 0; 
 			break;
 			case 1: // Restart
-				room_goto(titleScreen);
+				room_restart();
 
 			break;
 			case 2: // MainMenus

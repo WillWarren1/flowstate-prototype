@@ -14,7 +14,7 @@
   "duration": 0.165408,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Scripts/Sounds.yy",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "spearHit",
