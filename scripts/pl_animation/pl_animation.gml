@@ -24,7 +24,7 @@ function pl_animation() {
 	switch(currentState){
 	    case states.normal:
 	        //grounded movement
-	        if(onGround){
+	        if(onGround || player == 1){
 	            //idle
 	            if(!left && !right){
 	                if(down){
@@ -104,32 +104,32 @@ function pl_animation() {
 	        switch(subState){
 	            case attacks.side_ground:
 	                animation_set(fd_side,sideSpriteG);
-	                weaponSprite = player == 0 ? sideSpriteG : sprEmpty;
+	                weaponSprite = sideSpriteG;
 	            break;
             
 	            case attacks.side_air:
 	                animation_set(fd_side,sideSpriteA);
-	               weaponSprite = player == 0 ? sideSpriteA : sprEmpty;            
+	               weaponSprite =sideSpriteA;            
 	            break;
             
 	            case attacks.up_ground:
 	                animation_set(fd_up,upSpriteG);
-	                weaponSprite = player == 0 ? upSpriteG : sprEmpty;        
+	                weaponSprite = upSpriteG;        
 	            break;
             
 	            case attacks.up_air:
 	                animation_set(fd_up,upSpriteA);
-	                weaponSprite = player == 0 ? upSpriteA : sprEmpty;          
+	                weaponSprite = upSpriteA;          
 	            break;
             
 	            case attacks.down_ground:
 	                animation_set(fd_down,downSpriteG);
-	                weaponSprite = player == 0 ? downSpriteG : sprEmpty;         
+	                weaponSprite = downSpriteG;         
 	            break;
             
 	            case attacks.down_air:
 	                animation_set(fd_down,downSpriteA);
-	                weaponSprite = player == 0 ? downSpriteA : sprEmpty;            
+	                weaponSprite = downSpriteA;            
 	            break;
 	        }
 	    break;
