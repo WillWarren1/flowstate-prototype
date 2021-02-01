@@ -1,4 +1,7 @@
 function pl_recoveryState() {
+	if (recoverDur == 35) {
+		audio_play_sound(landing, 1, false);
+	}
 	//slow horizontal speed
 	xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
 

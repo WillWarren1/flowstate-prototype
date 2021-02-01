@@ -4,9 +4,11 @@ function pl_dashState() {
 		dashFlow = 1.2
 	}
 	//zero out ySpeed and gradually slow down the xSpeed
-	ySpeed = 0;
+	//ySpeed = 0;
 	xSpeed = approach(xSpeed,0,0.5 * god.gameSpeed);
-
+	if (dashDur == dashDurMax && player == 0) {
+		audio_play_sound(dashSound, 5, false);
+	}
 	//count down dashDur and reset state to normal when dashDur reaches 0
 	dashDur -= 1 * god.gameSpeed;
 	if(dashDur <= 0){

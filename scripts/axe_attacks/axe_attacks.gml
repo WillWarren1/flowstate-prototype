@@ -6,6 +6,7 @@ function axe_attacks() {
 	    case attacks.side_air:
 	        if(frame_check(1,0)){
 	            hitbox_create(-4*facing,-24,22*facing,24,6,3*facing,-2,90,200);
+				audio_play_sound(axeSwing, 4, false);
 	        }
 	    break;
     
@@ -13,6 +14,7 @@ function axe_attacks() {
 	    case attacks.up_air:
 	        if(frame_check(1,0)){
 	            hitbox_create(-16*facing,-32,32*facing,22,6,2*facing,-4.5,80,150);
+				audio_play_sound(axeSwing, 4, false);
 	        }        
 	    break;
     
@@ -20,6 +22,7 @@ function axe_attacks() {
 	    case attacks.down_air:
 	        if(frame_check(1,0)){
 	            hitbox_create(-16*facing,-12,32*facing,20,6,2*facing,3,95,400);
+				audio_play_sound(axeSwing, 4, false);
 	        }  
 	    break;
 	}

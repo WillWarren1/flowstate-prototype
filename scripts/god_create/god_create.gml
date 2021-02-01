@@ -15,7 +15,7 @@ function god_create() {
 
 	//debug
 	showBox = false; //used to show hitboxes
-
+	audio_play_sound(moody_synth_gart, 6, true);
 
 
 }

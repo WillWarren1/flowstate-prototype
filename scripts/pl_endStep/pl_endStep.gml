@@ -38,6 +38,13 @@ function pl_endStep() {
 	    break;
 	}
 
+	if (player == 0 && onGround && xSpeed != 0 && currentState != states.dash && currentState != states.dead && currentState != states.tumble) {
+		footstepCounter -= 1;
+		if (footstepCounter <= 0) {
+			audio_play_sound(footstep, 5, false);
+			footstepCounter = 10;
+		}
+	}
 	//hit
 	 //
 	if(hit && !instanceIsInvincible){
@@ -65,6 +72,11 @@ function pl_endStep() {
 		    facing = hitBy.owner.facing * -1;
 		    depth  = hitBy.depth;
 		    hitStun = hitBy.hitStun;
+			if (hitBy.owner.weapon == weapons.axe) {
+				audio_play_sound(axeHit, 2, false);
+			} else if (hitBy.owner.weapon == weapons.spear) {
+				audio_play_sound(spearHit, 2, false);
+			}
 		} else {
 			xSpeed = 0;
 		    ySpeed = 0;
@@ -76,6 +88,10 @@ function pl_endStep() {
 				canGiveFlow = false
 			}
 			currentState = states.dead
+			if (!justDied && player == 0) {
+				audio_play_sound(deathSound, 5, false);
+				justDied = true;
+			}
 		} else {
 			currentState = states.tumble;	
 		}

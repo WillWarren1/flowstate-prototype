@@ -27,20 +27,20 @@
     
 	    //dagger
 	    case weapons.dagger:
-	        playerRun = sprPlayer_Run_Base;
+	        playerRun = spr_flyingEnemy //sprPlayer_Run_Base;
 			canCharge = false;
-	        idleSprite   = sprDagger_Idle;
-	        weaponIdle   = sprDagger_Idle;
-	        weaponRun    = sprDagger_Run;
-	        weaponJump   = sprDagger_Jump;
-			weaponRecover = sprPlayer_Recovery_Base;
-	        weaponSprite = sprDagger_Idle;
-	        sideSpriteG  = sprDagger_Attack_Side_G;
-	        sideSpriteA  = sprDagger_Attack_Side_A;
-	        upSpriteG    = sprDagger_Attack_Up_G;
-	        upSpriteA    = sprDagger_Attack_Up_A;
-	        downSpriteG  = sprDagger_Attack_Down_G;
-	        downSpriteA  = sprDagger_Attack_Down_A;
+	        idleSprite   = spr_flyingEnemy //sprDagger_Idle;
+	        weaponIdle   = spr_flyingEnemy //sprDagger_Idle;
+	        weaponRun    = spr_flyingEnemy //sprDagger_Run;
+	        weaponJump   = spr_flyingEnemy //sprDagger_Jump;
+			weaponRecover = spr_flyingEnemy //sprPlayer_Recovery_Base;
+	        weaponSprite = spr_flyingEnemy //sprDagger_Idle;
+	        sideSpriteG  = spr_flyingEnemyAttack //sprDagger_Attack_Side_G;
+	        sideSpriteA  = spr_flyingEnemyAttack //sprDagger_Attack_Side_A;
+	        upSpriteG    = spr_flyingEnemyAttack //sprDagger_Attack_Up_G;
+	        upSpriteA    = spr_flyingEnemyAttack //sprDagger_Attack_Up_A;
+	        downSpriteG  = spr_flyingEnemyAttack //sprDagger_Attack_Down_G;
+	        downSpriteA  = spr_flyingEnemyAttack //sprDagger_Attack_Down_A;
 	        fd_side      = fd_dagger_side;
 	        fd_up        = fd_dagger_up;
 	        fd_down      = fd_dagger_down;
@@ -48,20 +48,20 @@
     
 	    //axe
 	    case weapons.axe:
-			playerRun = sprPlayer_Run_Base;
+			playerRun = spr_mantidRun //sprPlayer_Run_Base;
 	        canCharge = false;
-	        idleSprite   = sprAxe_Idle;
-	        weaponIdle   = sprAxe_Idle;
-	        weaponRun    = sprAxe_Run;
-	        weaponJump   = sprAxe_Jump;
-			weaponRecover = sprPlayer_Recovery_Base;
-	        weaponSprite = sprAxe_Idle;
-	        sideSpriteG  = sprAxe_Attack_Side_G;
-	        sideSpriteA  = sprAxe_Attack_Side_A;
-	        upSpriteG    = sprAxe_Attack_Up_G;
-	        upSpriteA    = sprAxe_Attack_Up_A;
-	        downSpriteG  = sprAxe_Attack_Down_G;
-	        downSpriteA  = sprAxe_Attack_Down_A;
+	        idleSprite   = spr_mantidIdle //sprAxe_Idle;
+	        weaponIdle   = spr_mantidIdle //sprAxe_Idle;
+	        weaponRun    = spr_mantidRun //sprAxe_Run;
+	        weaponJump   = spr_mantidJump //sprAxe_Jump;
+			weaponRecover = spr_mantidCrouch //sprPlayer_Recovery_Base;
+	        weaponSprite = sprEmpty //sprAxe_Idle;
+	        sideSpriteG  = spr_mantidAttack //sprAxe_Attack_Side_G;
+	        sideSpriteA  = spr_mantidAttack //sprAxe_Attack_Side_A;
+	        upSpriteG    = spr_mantidAttack_U //sprAxe_Attack_Up_G;
+	        upSpriteA    = spr_mantidAttack_U //sprAxe_Attack_Up_G;
+	        downSpriteG  = spr_mantidAttack_D //sprAxe_Attack_Up_G;
+	        downSpriteA  = spr_mantidAttack_D //sprAxe_Attack_Up_G;
 	        fd_side      = fd_axe_side;
 	        fd_up        = fd_axe_up;
 	        fd_down      = fd_axe_down;

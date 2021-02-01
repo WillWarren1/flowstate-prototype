@@ -13,6 +13,7 @@ repeat(abs(v)){
     if(ySpeed <= 0){
         if(place_meeting(x,y+sign(v),parentBlocker)){
             y_collide();
+            y-=sign(v);
             break;
         }else{
             y += sign(v) * god.gameSpeed;
@@ -30,8 +31,7 @@ repeat(abs(h)) {
         x += sign(h) * god.gameSpeed;
     }else{
         x_collide();
+		x-=sign(h);
         break;
     }
 }
-
-

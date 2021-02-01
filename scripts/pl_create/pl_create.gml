@@ -26,9 +26,12 @@ function pl_create() {
 	attack = false;
 	attackHold = false;
 
+	footstepCounter = 10;
 	dash = false;
 	dashHold = false;
-
+	
+	justDied = false;
+	
 	item = false;
 	itemHold = false;
 
@@ -59,8 +62,6 @@ function pl_create() {
 	airDash = false;
 
 	//fighting
-	//hit and hurtboxes
-	hbox_init();
 
 	hpMax = 1000;
 	hp    = hpMax;
