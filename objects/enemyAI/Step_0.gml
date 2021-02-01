@@ -49,6 +49,7 @@ if (ds_list_size(enemyList) > 0) {
 					}
 				}
 				if (!playerWithinSight && searchingForPlayer && alarm_get(4) <= 0) {
+						var playerIsTooFar = distance_to_object(oPlayer) >= 400
 						playerIsTooHigh = distance_to_object(oPlayer) >= 100 && playerDirection >= 0 && playerDirection <= 180
 						if (!playerIsTooHigh && currentState != states.dash) {
 							if (playerDirection < 70 || playerDirection > 290) {
@@ -59,7 +60,8 @@ if (ds_list_size(enemyList) > 0) {
 								if (directionalIntent != "left") {
 									directionalIntent = "left"
 								}
-							} 
+							}
+							if playerIsTooFar { directionalIntent = "" }
 						} else if (alarm_get(4) <= 0) {
 							alarm_set(4, room_speed * 2)
 						}	

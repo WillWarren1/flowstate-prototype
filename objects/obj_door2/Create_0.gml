@@ -1,19 +1,21 @@
 targetx = x
 targety = y
 
-roomnext = level1butthefakeone
+roomnext = level2
+returning = room != level3 || false;
 
-if room = level2
+if room = level2 || (returning && room == level2)
 	{
-	targetx = 1359
-	targety = 123
-	roomnext = level2
+	targetx = 12
+	targety = 400
+	roomnext = level3
 	}
 else
 	{
 	if room = level3
 		{
-		targetx = 0
-		targety = 388
+		targetx = 1350
+		targety = 115
+		returning = true
 		}
 	}

@@ -1,14 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (room == titleScreen) {	
-	draw_text(x, y, "TITLE TEXT")	
-	draw_text(x, y+20, "press ENTER or START to begin");	
+	draw_set_color(c_white);
+	draw_text_transformed(x, y, "Novissime Rex", 3, 3, 0)	
+	draw_text_transformed(x, y+64, "press ENTER or START to begin", 3, 3, 0);
+	draw_text_transformed(x, y+192, "a prototype by", 2, 2, 0);
+	draw_text_transformed(x, y+224, "Pumpkin Head Training Dummy", 3, 3, 0);
 }	
 
 if (room == controlScreen) {	
 	draw_set_color(c_white);
-	draw_text(x,y+48,"Q: Jump");	
-	draw_text(x,y+64,"W: Attack");	
-	draw_text(x,y+80,"E: Dash");	
-	draw_text(x,y+96,"Arrows: Move / Aim Attack");	
+	draw_text_transformed(x,y,"Q/A Button: Jump", 3, 3, 0);	
+	draw_text_transformed(x,y+64,"W/X Button: Attack", 3, 3, 0);	
+	draw_text_transformed(x,y+128,"E/B Button: Dash", 3, 3, 0);	
+	draw_text_transformed(x,y+192,"Arrows/D-Pad/Left Stick: Move / Aim Attack", 3, 3, 0);	
 } 
+
+if (room == creditScreen) {
+	draw_set_color(c_white);
+	draw_text_transformed(x,y,"Thanks For Playing", 3, 3, 0);
+}

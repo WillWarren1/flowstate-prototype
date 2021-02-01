@@ -5,5 +5,5 @@ for (var i = 0; i < gp_num; i++;) {
 	if gamepad_is_connected(i) global.gp[i] = true else global.gp[i] = false;	
 } 
 
-font	= font_add( RedeemGold, 156, true, true, 32, 128);
+font	= font_add_sprite( sfont_jasontomlee, ord(" "), 1, 3);
 draw_set_font( font );
