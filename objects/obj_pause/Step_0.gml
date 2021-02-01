@@ -118,8 +118,8 @@ if ( pause ){
 
 			break;
 			case 2: // MainMenus
-				instance_activate_all();
-				screen_alpha_set = 0;
+				instance_deactivate_all(false);
+				room_goto(titleScreen);
 
 			break;
 			case 3: // Exit
